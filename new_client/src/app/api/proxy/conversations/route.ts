@@ -1,13 +1,14 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
+import { SERVER_URL } from "@/utils/commonHelper";
 
-const LIST_CONVERSATIONS_URL = `${process.env.NEXT_PUBLIC_API_URL}/api/gemini/conversations`;
+const LIST_CONVERSATIONS_URL = `${SERVER_URL}/api/gemini/conversations`;
 
 export async function GET(request: Request) {
   try {
-    const auth = request.headers.get('Authorization') || '';
+    const auth = request.headers.get("Authorization") || "";
 
     const resp = await fetch(LIST_CONVERSATIONS_URL, {
-      method: 'GET',
+      method: "GET",
       headers: {
         Authorization: auth,
       },
@@ -21,6 +22,9 @@ export async function GET(request: Request) {
     const data = await resp.json();
     return NextResponse.json(data, { status: 200 });
   } catch (error: unknown) {
-    return NextResponse.json({ error: error instanceof Error ? error.message : 'Unknown error' }, { status: 500 });
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : "Unknown error" },
+      { status: 500 },
+    );
   }
 }

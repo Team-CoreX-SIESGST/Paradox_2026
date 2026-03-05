@@ -2,7 +2,7 @@
 
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { GalleryVerticalEnd } from "lucide-react"
+import { Flame } from "lucide-react"
 import { Loader2 } from "lucide-react"
 
 import { LoginForm } from "@/components/ui/login-form"
@@ -29,29 +29,23 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="grid min-h-svh lg:grid-cols-2">
+    <div className="grid min-h-svh bg-pampas lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
         <div className="flex justify-center gap-2 md:justify-start">
-          <a href="#" className="flex items-center gap-2 font-medium">
-            <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
-              <GalleryVerticalEnd className="size-4" />
+          <a href="#" className="flex items-center gap-2 font-medium text-foreground">
+            <div className="bg-crail text-white flex size-6 items-center justify-center rounded-md">
+              <Flame className="size-4" />
             </div>
-            Luna AI.
+            RegIntel
           </a>
         </div>
         <div className="flex flex-1 items-center justify-center">
-          <div className="w-full max-w-xs">
+          <div className="w-full max-w-sm rounded-xl border border-border-subtle bg-background p-6 shadow-sm">
             <LoginForm />
           </div>
         </div>
       </div>
-      <div className="bg-muted relative hidden lg:block">
-        <RotatingBackground
-          images={["/bg1.png", "/bg2.jpg", "/bg3.jpg", "/bg4.jpg", "/bg5.jpg", "/bg6.jpg"]}
-          alt="Luna background"
-          className="dark:brightness-[0.8] dark:grayscale"
-        />
-      </div>
+      
     </div>
   )
 }

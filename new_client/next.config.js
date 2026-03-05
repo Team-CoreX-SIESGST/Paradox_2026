@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const path = require('path');
-
+// import { SERVER_URL } from "@/utils/commonHelper";
+// const server_url = require("../utils/commonHelper");
 const nextConfig = {
   eslint: {
     // Warning: This allows production builds to successfully complete even if
@@ -16,10 +17,10 @@ const nextConfig = {
   },
   async rewrites() {
     return [
-      {
-        source: '/api/speech/:path*',
-        destination: `${process.env.NEXT_PUBLIC_API_URL}/api/speech/:path*`,
-      },
+      // {
+      //   source: "/api/speech/:path*",
+      //   destination: `${server_url}/api/speech/:path*`,
+      // },
     ];
   },
   // Enable React Strict Mode
