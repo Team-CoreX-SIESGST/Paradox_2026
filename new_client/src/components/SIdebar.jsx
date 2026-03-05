@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import {
   LayoutDashboard,
   FileText,
@@ -9,7 +10,6 @@ import {
   CheckSquare,
   Bell,
   Settings,
-  Flame,
   ChevronLeft,
 } from "lucide-react";
 import { useState } from "react";
@@ -41,7 +41,7 @@ export function AppSidebar() {
       }
     >
       <div className="flex items-center gap-2 px-5 py-5 border-b border-border-subtle">
-        <Flame className="h-5 w-5 text-crail flex-shrink-0" />
+        <Image src="/logo14.png" alt="RegIntel logo" width={28} height={28} className="rounded-sm flex-shrink-0" />
         {!collapsed && (
           <span className="text-lg font-semibold text-foreground tracking-tight">
             RegIntel

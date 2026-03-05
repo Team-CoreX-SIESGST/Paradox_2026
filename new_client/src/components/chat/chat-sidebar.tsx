@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import {
   SidebarContent,
   SidebarFooter,
@@ -18,7 +19,7 @@ import {
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
-import { History, LogOut, Plus, RotateCcw, Sparkles, Trash2 } from "lucide-react"
+import { History, LogOut, Plus, RotateCcw, Trash2 } from "lucide-react"
 
 export type ChatSidebarConversation = {
   id: string
@@ -65,9 +66,7 @@ export function ChatSidebar({
       <SidebarHeader className="border-b border-border/40 px-3 py-4">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-crail shadow-sm">
-              <Sparkles className="h-4 w-4 text-white" />
-            </div>
+            <Image src="/logo14.png" alt="RegIntel logo" width={40} height={40} className="rounded-xl shadow-sm" />
             <div className="flex flex-col leading-tight">
               <span className="text-sm font-semibold tracking-tight">RegIntel</span>
               <span className="text-xs text-muted-foreground">Compliance workspace</span>
