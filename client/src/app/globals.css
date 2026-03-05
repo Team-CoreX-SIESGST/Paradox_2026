@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* RailMind Design System */
+    --background: 0 0% 100%;
+    --foreground: 233 47% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 233 47% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 233 47% 14%;
+
+    /* Primary: #4E4E94 */
+    --primary: 240 31% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: light lavender */
+    --secondary: 240 100% 98%;
+    --secondary-foreground: 240 31% 44%;
+
+    --muted: 240 20% 96%;
+    --muted-foreground: 240 20% 45%;
+
+    --accent: 240 31% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 31% 44%;
+    --input: 240 20% 90%;
+    --ring: 240 31% 44%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --heading-color: 233 47% 14%;
+    --body-color: 240 20% 35%;
+    --section-lavender: 240 100% 98%;
+    --primary-glow: 240 31% 55%;
+    --primary-subtle: 240 31% 44%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), 'Inter', sans-serif;
+    color: hsl(var(--body-color));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display), 'Outfit', sans-serif;
+    color: hsl(var(--heading-color));
+  }
+}
+
+@layer components {
+  .section-white {
+    @apply bg-white;
+  }
+
+  .section-lavender {
+    background-color: hsl(var(--section-lavender));
+  }
+
+  .railmind-card {
+    @apply bg-white rounded-2xl p-6 shadow-sm border transition-all duration-300;
+    border-color: hsl(var(--primary) / 0.15);
+  }
+
+  .railmind-card:hover {
+    @apply shadow-md;
+    border-color: hsl(var(--primary) / 0.4);
+  }
+
+  .badge-tech {
+    background-color: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+    border-color: hsl(var(--primary) / 0.2);
+    @apply px-4 py-2 rounded-full font-mono text-sm border;
+  }
+
+  .stat-card {
+    @apply bg-white rounded-2xl p-6 shadow-sm text-center border;
+    border-color: hsl(var(--primary) / 0.15);
+  }
+
+  .pain-card {
+    @apply bg-white rounded-xl p-5 shadow-sm border-l-4;
+    border-left-color: hsl(var(--primary));
+    border-top-color: hsl(var(--primary) / 0.1);
+    border-right-color: hsl(var(--primary) / 0.1);
+    border-bottom-color: hsl(var(--primary) / 0.1);
+  }
+
+  .category-pill {
+    background-color: hsl(var(--primary) / 0.08);
+    color: hsl(var(--primary));
+    border-color: hsl(var(--primary) / 0.2);
+    @apply px-5 py-2.5 rounded-full border font-medium text-sm transition-all duration-200;
+  }
+
+  .category-pill:hover {
+    background-color: hsl(var(--primary) / 0.15);
+  }
+}
+
+/* Count-up animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.count-animate {
+  animation: countUp 0.6s ease-out forwards;
+}
