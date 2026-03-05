@@ -36,6 +36,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { FeedbackDialog } from "@/components/ui/feedback-dialog"
 import { toast } from "sonner"
 import { TTSButton } from "@/components/ui/tts-button"
+import Link from "next/link"
 
 function normalizeImageResults(raw: unknown): ImageResult[] | undefined {
   if (!Array.isArray(raw)) return undefined

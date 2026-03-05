@@ -133,12 +133,12 @@ export default function LandingPage() {
             <div className="flex items-center gap-2">
               <Link
                 href="/chat"
-                className="hidden sm:flex items-center gap-2 rounded-full border border-border-subtle bg-background px-2.5 py-1.5 hover:border-crail/50 transition-colors duration-150"
+                className="flex items-center gap-2 rounded-full border border-border-subtle bg-background px-2.5 py-1.5 hover:border-crail/50 transition-colors duration-150"
               >
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-crail text-xs font-semibold text-white">
                   {userInitial}
                 </span>
-                <span className="max-w-[180px] truncate text-xs text-foreground">
+                <span className="hidden sm:block max-w-[180px] truncate text-xs text-foreground">
                   {displayEmail || displayName}
                 </span>
               </Link>
