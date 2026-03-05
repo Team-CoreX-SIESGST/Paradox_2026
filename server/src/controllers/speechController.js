@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-import { transcribeAudio } from '../config/openai.js';
+// import { transcribeAudio } from '../config/openai.js';
 import { deleteFile } from '../utils/fileUpload.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -49,7 +49,7 @@ export const convertSpeechToText = async (req, res) => {
     });
 
     // Transcribe the audio using OpenAI Whisper API
-    const result = await transcribeAudio(audioStream);
+    const result = {};
     
     if (!result.success) {
       console.error('Transcription failed:', result.error);
