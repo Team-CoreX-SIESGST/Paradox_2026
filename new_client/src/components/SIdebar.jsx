@@ -42,7 +42,7 @@ export function AppSidebar() {
   return (
     <aside
       className={
-        "h-screen bg-pampas border-r border-border-subtle flex flex-col transition-all duration-150 flex-shrink-0 " +
+        "sticky top-0 h-screen bg-pampas border-r border-border-subtle flex flex-col transition-all duration-150 flex-shrink-0 " +
         (collapsed ? "w-16" : "w-[260px]")
       }
     >

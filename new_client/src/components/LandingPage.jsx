@@ -126,7 +126,7 @@ export default function LandingPage() {
       />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-pampas/80" />
       <div className="relative z-10">
-      <header className="bg-pampas/90 border-b border-border-subtle ">
+      <header className="fixed inset-x-0 top-0 z-50 bg-pampas/90 border-b border-border-subtle backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src="/logo14.png" alt="RegIntel logo" width={28} height={28} className="rounded-sm" />
@@ -138,7 +138,7 @@ export default function LandingPage() {
             <a href="#how-it-works" className="text-sm text-cloudy hover:text-foreground transition-colors duration-150">How It Works</a>
             <a href="#use-cases" className="text-sm text-cloudy hover:text-foreground transition-colors duration-150">Use Cases</a>
             <a href="#pricing" className="text-sm text-cloudy hover:text-foreground transition-colors duration-150">Pricing</a>
-            <Link href="/dashboard" className="text-sm text-cloudy hover:text-foreground transition-colors duration-150">Dasboard</Link>
+            <Link href="/dashboard" className="text-sm text-cloudy hover:text-foreground transition-colors duration-150">Dashboard</Link>
           </nav>
 
           {user ? (
