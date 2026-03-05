@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-display' });
 
 export const metadata = {
-  title: "RailMind",
-  description: "AI for Smarter Railways",
+  title: "RegIntel",
+  description: "AI for Regulatory Intelligence",
   manifest: '/manifest.json'
 };
 

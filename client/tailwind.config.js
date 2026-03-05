@@ -11,6 +11,13 @@ module.exports = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        crail: 'hsl(var(--crail))',
+        'crail-hover': 'hsl(var(--crail-hover))',
+        'crail-foreground': 'hsl(var(--crail-foreground))',
+        cloudy: 'hsl(var(--cloudy))',
+        pampas: 'hsl(var(--pampas))',
+        'text-primary': 'hsl(var(--text-primary))',
+        'border-subtle': 'hsl(var(--border-subtle))',
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
