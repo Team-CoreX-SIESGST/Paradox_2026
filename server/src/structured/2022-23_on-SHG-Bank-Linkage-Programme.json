@@ -1,0 +1,235 @@
+{
+  "circular": {
+    "id": "2025-26/01 — FIDD.CO.FID.BC.No.4/12.01.033/2025-26",
+    "title": "Master Circular on SHG-Bank Linkage Programme",
+    "date": "2025-04-01",
+    "circular_number": "RBI/2025-26/01 — FIDD.CO.FID.BC.No.4/12.01.033/2025-26",
+    "type": "Circular",
+    "topic": "PSL",
+    "applicable_to": [
+      "All Scheduled Commercial Banks",
+      "Primary (Urban) Cooperative Banks"
+    ],
+    "status": "Active",
+    "summary": "The SHG-Bank Linkage Programme aims to bridge the gap between the formal banking system and the rural poor, focusing on financial inclusion and women's empowerment. Banks must treat SHG financing as a core business activity and provide hassle-free credit. The programme requires quarterly monitoring and reporting to both the Board and NABARD."
+  },
+  "clauses": [
+    {
+      "clause_number": "1",
+      "text": "Primary (Urban) Cooperative Banks (UCBs) are expected to lay down, with the approval of their boards, transparent policies and guidelines for credit dispensation, in respect of each broad category of economic activity, keeping in view the credit exposure norms and various other guidelines issued by the Reserve Bank of India from time to time.",
+      "summary": "UCBs must lay down transparent policies for credit dispensation",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "2",
+      "text": "The approach to financing of SHGs should be totally hassle-free.",
+      "summary": "Financing of SHGs should be hassle-free",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4",
+      "text": "Instructions on simplified Customer Due Diligence (CDD) applicable to SHGs as prescribed in Chapter VI of the Master Direction - Know Your Customer (KYC) Direction, 2016 shall be adhered to.",
+      "summary": "Simplified CDD should be applied to SHGs",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5",
+      "text": "Bank lending to SHGs should be included in branch credit plan, block credit plan, district credit plan, and state credit plan of each bank.",
+      "summary": "SHG lending should be included in credit plans",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "6",
+      "text": "Banks have discretion to decide interest rates on loans to SHGs/members, subject to regulatory guidelines on interest rate on advances contained in the Master Direction - Reserve Bank of India (Interest Rate on Advances) Directions, 2016.",
+      "summary": "Banks have discretion to decide interest rates on SHG loans",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "7",
+      "text": "Instructions on service charges applicable to priority sector loans to SHGs as prescribed in the Master Directions - Reserve Bank of India (Priority Sector Lending – Targets and Classification) Directions, 2025 shall be adhered to.",
+      "summary": "Service charges should be applied as per Master Directions",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "8",
+      "text": "Loans to SHGs are eligible for classification under Priority Sector Lending (PSL) under respective categories viz Agriculture, MSME, Social Infrastructure, and others.",
+      "summary": "SHG loans are eligible for PSL classification",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "9",
+      "text": "Defaults by a few members of SHGs and/or their family members should not ordinarily come in the way of financing SHGs per se, provided the SHG itself is not in default.",
+      "summary": "Defaults by SHG members should not affect financing",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "10",
+      "text": "The bank loan may not be utilized by the SHG for financing a defaulter member to the bank.",
+      "summary": "SHG loans should not be used to finance defaulters",
+      "type": "Prohibition"
+    },
+    {
+      "clause_number": "11",
+      "text": "Banks may initiate suitable steps to internalize the SHGs linkage project and organize exclusive short duration programmes for field level functionaries.",
+      "summary": "Banks should internalize SHG linkage project",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "12",
+      "text": "Banks shall adhere to the instructions on conducting tailored financial literacy programmes targeting SHGs.",
+      "summary": "Banks should conduct financial literacy programmes for SHGs",
+      "type": "Obligation"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Lay down transparent Board-approved policies and guidelines for credit dispensation to SHGs.",
+      "plain_english": "Banks must create clear policies for lending to SHGs",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "1"
+    },
+    {
+      "text": "Review the loan policy at least once in a financial year to align with risk appetite and regulations.",
+      "plain_english": "Banks must review their loan policy annually",
+      "applicable_to": [
+        "Bank Board"
+      ],
+      "deadline_days": null,
+      "frequency": "Annual",
+      "source_clause": "2"
+    },
+    {
+      "text": "Adhere to simplified Customer Due Diligence (CDD) / KYC procedures for SHG savings accounts.",
+      "plain_english": "Banks must use simplified CDD for SHG accounts",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "4"
+    },
+    {
+      "text": "Include SHG lending in branch, block, district, state, and corporate credit plans.",
+      "plain_english": "Banks must include SHG lending in their credit plans",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "5"
+    },
+    {
+      "text": "Delegate adequate sanctioning powers to branch managers to ensure simple and hassle-free credit.",
+      "plain_english": "Banks must give branch managers power to sanction loans",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "5"
+    },
+    {
+      "text": "Monitor the SHG Bank Linkage Programme (SHG-BLP) progress quarterly at the highest corporate level.",
+      "plain_english": "Banks must monitor SHG-BLP progress quarterly",
+      "applicable_to": [
+        "Bank Board"
+      ],
+      "deadline_days": null,
+      "frequency": "Quarterly",
+      "source_clause": "11"
+    },
+    {
+      "text": "Report SHG-BLP progress to NABARD (Micro Credit Innovations Dept) in the prescribed format.",
+      "plain_english": "Banks must report SHG-BLP progress to NABARD",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": 15,
+      "frequency": "Quarterly",
+      "source_clause": "11"
+    },
+    {
+      "text": "Report credit information of SHG members to Credit Information Companies (CICs).",
+      "plain_english": "Banks must report SHG member credit info to CICs",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "12"
+    },
+    {
+      "text": "Ensure SHG loans are not used to finance a member who is a defaulter to the bank.",
+      "plain_english": "Banks must not use SHG loans to finance defaulters",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "9"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "The bank loan may not be utilized by the SHG for financing a defaulter member to the bank.",
+      "plain_english": "SHG loans should not be used to finance defaulters",
+      "applicable_to": [
+        "All Scheduled Commercial Banks"
+      ],
+      "source_clause": "10"
+    }
+  ],
+  "penalties": [],
+  "definitions": [
+    {
+      "term": "Self Help Group (SHG)",
+      "definition": "Small groups (formal or informal) of individuals (normally 10-20 members) promoting savings habits among members, which are then lent to members for income generation.",
+      "plain_english": "A group of people who save and lend to each other"
+    },
+    {
+      "term": "Joint Liability Group (JLG)",
+      "definition": "An informal group of individuals (normally 4-10 members) coming together for the purpose of availing bank loans against mutual guarantee for similar economic activities.",
+      "plain_english": "A group of people who guarantee each other's loans"
+    },
+    {
+      "term": "Matured SHG",
+      "definition": "SHGs that have shown a proven track record, savings pattern, and recovery rate, eligible for higher credit limits beyond the standard saving-to-loan ratio.",
+      "plain_english": "An experienced SHG with a good track record"
+    },
+    {
+      "term": "Simplified CDD",
+      "definition": "Eased Know Your Customer requirements specifically tailored for SHGs as per Chapter VI of the KYC Master Direction.",
+      "plain_english": "Simplified customer verification for SHGs"
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "Master Direction - Know Your Customer (KYC) Direction, 2016",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Direction - Reserve Bank of India (Interest Rate on Advances) Directions, 2016",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Directions - Reserve Bank of India (Priority Sector Lending – Targets and Classification) Directions, 2025",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Direction – Reserve Bank of India (Credit Information Reporting) Directions, 2025",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Circular FIDD.FLC.BC.No.22/12.01.018/2016-17",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "RBI Letter FIDD.CO.FID.No.3387/12.01.033/2017-18",
+      "relationship": "references"
+    }
+  ]
+}
