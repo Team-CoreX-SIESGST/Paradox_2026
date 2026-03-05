@@ -15,7 +15,7 @@ import {
 import { useState } from "react";
 
 const navItems = [
-  { title: "Dashboard", url: "/chat", icon: LayoutDashboard },
+  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "Circulars", url: "/circulars", icon: FileText },
   { title: "Compliance Chat", url: "/chat", icon: MessageSquare },
   { title: "Tasks", url: "/tasks", icon: CheckSquare },
