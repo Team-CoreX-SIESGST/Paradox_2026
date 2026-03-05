@@ -31,6 +31,11 @@ const silkscreen = Silkscreen({
 export const metadata: Metadata = {
   title: "RegIntel",
   description: "Regulatory intelligence workspace",
+  icons: {
+    icon: "/logo14.png",
+    shortcut: "/logo14.png",
+    apple: "/logo14.png",
+  },
 };
 
 export default function RootLayout({
