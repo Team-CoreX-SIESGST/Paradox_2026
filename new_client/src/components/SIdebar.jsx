@@ -16,11 +16,11 @@ import { useState } from "react";
 
 const navItems = [
   { title: "Dashboard", url: "/chat", icon: LayoutDashboard },
-  { title: "Circulars", url: "/chat", icon: FileText },
+  { title: "Circulars", url: "/circulars", icon: FileText },
   { title: "Compliance Chat", url: "/chat", icon: MessageSquare },
-  { title: "Tasks", url: "/chat", icon: CheckSquare },
-  { title: "Alerts", url: "/chat", icon: Bell },
-  { title: "Settings", url: "/chat", icon: Settings },
+  { title: "Tasks", url: "/tasks", icon: CheckSquare },
+  // { title: "Alerts", url: "/chat", icon: Bell },
+  // { title: "Settings", url: "/chat", icon: Settings },
 ];
 
 const recentCirculars = [
