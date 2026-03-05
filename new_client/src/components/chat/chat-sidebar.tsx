@@ -65,12 +65,12 @@ export function ChatSidebar({
       <SidebarHeader className="border-b border-border/40 px-3 py-4">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-[#0f0f13] to-[#1d1f24] shadow-[0_6px_18px_rgba(11,12,17,0.35)] dark:from-white/85 dark:to-white/65 dark:shadow-[0_10px_28px_rgba(0,0,0,0.45)]">
-              <Sparkles className="h-4 w-4 text-white dark:text-[#0c0c12]" />
+            <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-crail shadow-sm">
+              <Sparkles className="h-4 w-4 text-white" />
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="text-sm font-semibold tracking-tight">Luna Research</span>
-              <span className="text-xs text-muted-foreground">Powered by AI</span>
+              <span className="text-sm font-semibold tracking-tight">RegIntel</span>
+              <span className="text-xs text-muted-foreground">Compliance workspace</span>
             </div>
           </div>
           <SidebarTrigger className="md:hidden" />
@@ -181,8 +181,8 @@ export function ChatSidebar({
       </SidebarContent>
 
       <SidebarFooter className="border-t border-border/40 px-3 py-4">
-        <div className="flex items-center gap-3 rounded-lg border border-border/40 bg-background/60 p-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold">
+        <div className="flex items-center gap-3 rounded-lg border border-border-subtle bg-pampas p-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-crail/10 text-sm font-semibold text-crail">
             {userInitial}
           </div>
           <div className="flex flex-1 flex-col text-xs">

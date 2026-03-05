@@ -130,9 +130,9 @@ export default function ChatPage() {
   }, [displayName])
 
   const desktopActionClasses =
-    "group/nav relative inline-flex h-8 items-center overflow-hidden rounded-full border border-white/70 bg-white/80 px-5 text-sm font-medium text-slate-700 shadow-[0_12px_30px_rgba(15,17,26,0.14)] transition-colors hover:border-[#0f62fe]/40 hover:bg-white hover:text-[#0f62fe] hover:shadow-[0_16px_38px_rgba(15,17,26,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0f62fe]/30 dark:border-white/10 dark:bg-white/10 dark:text-slate-300 dark:shadow-[0_18px_45px_rgba(0,0,0,0.55)] dark:hover:border-[#82aaff]/40 dark:hover:text-[#82aaff] dark:hover:shadow-[0_22px_60px_rgba(0,0,0,0.6)] dark:focus-visible:ring-[#82aaff]/30"
+    "group/nav relative inline-flex h-8 items-center overflow-hidden rounded-full border border-border-subtle bg-background px-5 text-sm font-medium text-cloudy shadow-sm transition-colors hover:border-crail/40 hover:text-crail focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crail/30"
   const desktopProfileButtonClasses =
-    "group/profile relative flex min-h-10 min-w-0 items-center gap-3 overflow-hidden rounded-full border border-white/70 bg-white/85 px-2 pr-5 text-left text-slate-900 shadow-[0_12px_34px_rgba(15,17,26,0.16)] transition-colors hover:border-[#0f62fe]/40 hover:bg-white hover:text-[#0f62fe] hover:shadow-[0_18px_48px_rgba(15,17,26,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0f62fe]/30 dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-[0_20px_55px_rgba(0,0,0,0.6)] dark:hover:border-[#82aaff]/40 dark:hover:text-[#82aaff] dark:hover:shadow-[0_26px_70px_rgba(0,0,0,0.68)] dark:focus-visible:ring-[#82aaff]/30"
+    "group/profile relative flex min-h-10 min-w-0 items-center gap-3 overflow-hidden rounded-full border border-border-subtle bg-background px-2 pr-5 text-left text-foreground shadow-sm transition-colors hover:border-crail/40 hover:text-crail focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crail/30"
 
   // Layout heights state
   const [layoutHeights, setLayoutHeights] = useState({
@@ -910,7 +910,7 @@ export default function ChatPage() {
 
   return (
     <div
-      className="relative flex flex-col overflow-hidden bg-gradient-to-br from-[#f5f5f7] via-[#f0f0f5] to-[#e5e5ed] text-slate-900 dark:bg-gradient-to-br dark:from-[#020203] dark:via-[#050509] dark:to-[#0b0b13] dark:text-slate-100"
+      className="relative flex flex-col overflow-hidden bg-pampas text-foreground"
       style={{ minHeight: viewportHeight }}
     >
       <div
@@ -918,15 +918,15 @@ export default function ChatPage() {
         className="pointer-events-none absolute inset-0 -z-10 opacity-90"
         style={{
           background:
-            'radial-gradient(circle at 20% 20%, rgba(255,255,255,0.9), transparent 55%), radial-gradient(circle at 80% 10%, rgba(255,255,255,0.65), transparent 50%), radial-gradient(circle at 50% 110%, rgba(0,102,204,0.08), transparent 70%)',
+            'radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 55%), radial-gradient(circle at 80% 10%, rgba(199,152,130,0.2), transparent 50%), radial-gradient(circle at 50% 110%, rgba(199,152,130,0.12), transparent 70%)',
         }}
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 hidden dark:block opacity-80"
+        className="pointer-events-none absolute inset-0 -z-10 hidden dark:block opacity-60"
         style={{
           background:
-            'radial-gradient(circle at 20% 20%, rgba(79,82,128,0.5), transparent 60%), radial-gradient(circle at 80% 0%, rgba(36,40,78,0.45), transparent 55%), radial-gradient(circle at 50% 120%, rgba(16,98,255,0.22), transparent 70%)',
+            'radial-gradient(circle at 20% 20%, rgba(199,152,130,0.35), transparent 60%), radial-gradient(circle at 80% 0%, rgba(133,85,64,0.25), transparent 55%), radial-gradient(circle at 50% 120%, rgba(183,90,57,0.2), transparent 70%)',
         }}
       />
 
@@ -935,16 +935,16 @@ export default function ChatPage() {
         ref={headerRef}
         className="fixed inset-x-0 top-0 z-20 flex justify-center px-3 sm:px-6 pt-[calc(1.25rem+env(safe-area-inset-top,0px))] pb-3"
       >
-        <div className="flex w-full max-w-7xl items-center justify-between rounded-[35px] border border-white/40 bg-white/70 px-4 shadow-[0_20px_45px_rgba(15,17,26,0.16)] backdrop-blur-3xl transition-all duration-300 supports-[backdrop-filter]:bg-white/55 dark:border-white/10 dark:bg-[#0d0d12]/70 dark:shadow-[0_24px_70px_rgba(0,0,0,0.7)] sm:px-8">
+        <div className="flex w-full max-w-7xl items-center justify-between rounded-[28px] border border-border-subtle bg-background/90 px-4 shadow-sm backdrop-blur-xl transition-all duration-300 sm:px-8">
           <div className="flex h-[60px] w-full items-center justify-between gap-3 sm:gap-6 md:grid md:grid-cols-[auto_minmax(0,1fr)_auto]">
             {/* Left Section - Logo */}
             <div className="flex items-center gap-3 sm:gap-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-2xl bg-gradient-to-br from-[#0f0f13] to-[#1d1f24] shadow-[0_6px_18px_rgba(15,17,26,0.35)] dark:from-white/90 dark:to-white/65 dark:shadow-[0_10px_28px_rgba(0,0,0,0.55)]">
-                <Search className="h-4 w-4 text-white dark:text-[#0c0c12]" />
+              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-crail shadow-sm">
+                <Search className="h-4 w-4 text-white" />
               </div>
               <div className="flex flex-col justify-center">
-                <h1 className={`${playfair.className} relative flex flex-wrap items-baseline justify-center gap-2 text-sm leading-snug tracking-tight text-slate-100 sm:flex-nowrap sm:text-[1rem] dark:text-white`}>
-                  Luna AI
+                <h1 className={`${playfair.className} relative flex flex-wrap items-baseline justify-center gap-2 text-sm font-semibold leading-snug tracking-tight text-foreground sm:flex-nowrap sm:text-[1rem]`}>
+                  RegIntel AI
                 </h1>
               </div>
             </div>
@@ -952,7 +952,7 @@ export default function ChatPage() {
             {/* Mobile Menu Toggle */}
             <button
               type="button"
-              className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/50 bg-white/70 text-slate-600 shadow-[0_10px_26px_rgba(15,17,26,0.14)] transition-colors duration-200 md:hidden dark:border-white/10 dark:bg-white/10 dark:text-slate-200"
+              className="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-full border border-border-subtle bg-background text-cloudy shadow-sm transition-colors duration-200 hover:text-foreground md:hidden"
               onClick={() => {
                 setIsHistoryOpen(false)
                 setIsProfileOpen(false)
@@ -978,7 +978,7 @@ export default function ChatPage() {
                 </span>
                 <span
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0f62fe]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#82aaff]/20"
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-[#B75A39]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#C76843]/20"
                 />
               </button>
 
@@ -1006,7 +1006,7 @@ export default function ChatPage() {
                   </span>
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0f62fe]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#82aaff]/20"
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#B75A39]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#C76843]/20"
                   />
                 </button>
 
@@ -1015,13 +1015,13 @@ export default function ChatPage() {
                     <div className="space-y-3 rounded-2xl border border-white/60 bg-white/75 px-4 py-4 dark:border-white/10 dark:bg-white/5">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-sm font-semibold text-slate-900 dark:text-white">Search chats</p>
+                          <p className="text-sm font-semibold text-foreground dark:text-white">Search chats</p>
                           <p className="text-xs text-slate-500 dark:text-slate-400">Browse and reopen conversations</p>
                         </div>
                         <Button
                           variant="ghost"
                           size="sm"
-                          className="h-8 px-2 text-xs text-[#0071e3] hover:text-[#0081ff] dark:text-[#4aa8ff]"
+                          className="h-8 px-2 text-xs text-[#B75A39] hover:text-[#A8502F] dark:text-[#C76843]"
                           onClick={startNewChat}
                           type="button"
                         >
@@ -1035,7 +1035,7 @@ export default function ChatPage() {
                           value={historyQuery}
                           onChange={(event) => setHistoryQuery(event.target.value)}
                           placeholder="Search conversations"
-                          className="h-10 rounded-2xl border border-white/60 bg-white/90 pl-9 pr-3 text-sm text-slate-700 shadow-sm transition focus-visible:border-[#0f62fe]/40 focus-visible:ring-2 focus-visible:ring-[#0f62fe]/30 dark:border-white/10 dark:bg-white/10 dark:text-slate-200"
+                          className="h-10 rounded-2xl border border-white/60 bg-white/90 pl-9 pr-3 text-sm text-slate-700 shadow-sm transition focus-visible:border-[#B75A39]/40 focus-visible:ring-2 focus-visible:ring-[#B75A39]/30 dark:border-white/10 dark:bg-white/10 dark:text-slate-200"
                         />
                       </div>
                     </div>
@@ -1068,7 +1068,7 @@ export default function ChatPage() {
                                     type="button"
                                   >
                                     <div className="flex min-w-0 items-center justify-between gap-3">
-                                      <span className="truncate font-medium text-slate-800 dark:text-slate-100">
+                                      <span className="truncate font-medium text-slate-800 dark:text-foreground">
                                         {conversation.title || `Chat ${conversation.id.slice(0, 6)}`}
                                       </span>
                                       {timestamp && (
@@ -1078,7 +1078,7 @@ export default function ChatPage() {
                                       )}
                                     </div>
                                     {loadingConversationId === conversation.id && (
-                                      <span className="mt-1 block text-xs text-[#0071e3] dark:text-[#4aa8ff]">Loading...</span>
+                                      <span className="mt-1 block text-xs text-[#B75A39] dark:text-[#C76843]">Loading...</span>
                                     )}
                                   </button>
                                   <button
@@ -1111,7 +1111,7 @@ export default function ChatPage() {
                 </span>
                 <span
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0f62fe]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#82aaff]/20"
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-[#B75A39]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#C76843]/20"
                 />
               </button>
 
@@ -1126,7 +1126,7 @@ export default function ChatPage() {
                 </span>
                 <span
                   aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0f62fe]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#82aaff]/20"
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-[#B75A39]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/nav:opacity-100 dark:via-[#C76843]/20"
                 />
               </button>
             </div>
@@ -1153,7 +1153,7 @@ export default function ChatPage() {
                         referrerPolicy="no-referrer"
                       />
                     ) : (
-                      <div className="flex h-6.5 w-6.5 items-center justify-center rounded-full bg-gradient-to-br from-[#0f66ff] to-[#4a8dff] text-sm font-semibold text-white">
+                      <div className="flex h-6.5 w-6.5 items-center justify-center rounded-full bg-gradient-to-br from-[#B75A39] to-[#C76843] text-sm font-semibold text-white">
                         {userInitial}
                       </div>
                     )}
@@ -1164,7 +1164,7 @@ export default function ChatPage() {
                   </div>
                   <span
                     aria-hidden="true"
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0f62fe]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/profile:opacity-100 dark:via-[#82aaff]/20"
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-[#B75A39]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/profile:opacity-100 dark:via-[#C76843]/20"
                   />
                 </button>
 
@@ -1179,12 +1179,12 @@ export default function ChatPage() {
                           referrerPolicy="no-referrer"
                         />
                       ) : (
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#0f66ff] to-[#4a8dff] text-lg font-semibold text-white">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#B75A39] to-[#C76843] text-lg font-semibold text-white">
                           {userInitial}
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
-                        <div className="truncate text-sm font-semibold text-slate-900 dark:text-white">{displayName}</div>
+                        <div className="truncate text-sm font-semibold text-foreground dark:text-white">{displayName}</div>
                         {displayEmail ? (
                           <div className="truncate text-xs text-slate-500 dark:text-slate-300">{displayEmail}</div>
                         ) : null}
@@ -1239,12 +1239,12 @@ export default function ChatPage() {
                           referrerPolicy="no-referrer"
                         />
                       ) : (
-                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#0f66ff] to-[#4a8dff] text-xl font-semibold text-white">
+                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#B75A39] to-[#C76843] text-xl font-semibold text-white">
                           {userInitial}
                         </div>
                       )}
                       <div className="flex min-w-0 flex-col">
-                        <span className="truncate text-sm font-semibold text-slate-900 dark:text-white">
+                        <span className="truncate text-sm font-semibold text-foreground dark:text-white">
                           {displayName}
                         </span>
                         {displayEmail ? (
@@ -1255,7 +1255,7 @@ export default function ChatPage() {
                     <button
                       type="button"
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="group flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/60 bg-white/80 text-slate-500 shadow-[0_10px_26px_rgba(15,17,26,0.18)] transition-colors hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0f62fe]/40 dark:border-white/15 dark:bg-white/10 dark:text-slate-300 dark:hover:text-white dark:focus-visible:ring-[#82aaff]/40"
+                      className="group flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/60 bg-white/80 text-slate-500 shadow-[0_10px_26px_rgba(15,17,26,0.18)] transition-colors hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B75A39]/40 dark:border-white/15 dark:bg-white/10 dark:text-slate-300 dark:hover:text-white dark:focus-visible:ring-[#C76843]/40"
                       aria-label="Close menu"
                     >
                       <X className="h-5 w-5" />
@@ -1296,14 +1296,14 @@ export default function ChatPage() {
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-sm font-medium text-slate-900 dark:text-slate-100">
+                    <div className="flex items-center gap-2 text-sm font-medium text-foreground dark:text-foreground">
                       <History className="h-4 w-4" />
                       Recent conversations
                     </div>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="flex h-8 w-8 items-center justify-center rounded-full text-slate-500 transition-colors hover:bg-white/80 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-slate-100"
+                      className="flex h-8 w-8 items-center justify-center rounded-full text-slate-500 transition-colors hover:bg-white/80 hover:text-foreground dark:text-slate-400 dark:hover:bg-white/10 dark:hover:text-foreground"
                       onClick={() => loadConversations()}
                     >
                       <RotateCcw className="h-4 w-4" />
@@ -1329,7 +1329,7 @@ export default function ChatPage() {
                             <li key={conversation.id} className="transition-transform duration-200 ease-out hover:translate-x-1">
                               <button
                                 className={`flex w-full items-start gap-3 px-4 py-3 text-left text-sm transition-colors ${isActive
-                                  ? 'bg-[#eaf2ff] text-[#0b84ff] shadow-inner dark:bg-[#0d1a2f] dark:text-[#73b3ff]'
+                                  ? 'bg-[#eaf2ff] text-[#B75A39] shadow-inner dark:bg-[#0d1a2f] dark:text-[#C76843]'
                                   : 'hover:bg-white/80 dark:hover:bg-white/10'
                                   }`}
                                 onClick={() => handleConversationSelect(conversation.id)}
@@ -1398,17 +1398,17 @@ export default function ChatPage() {
                     <div className="flex flex-col items-center gap-5">
                       <span className="inline-flex items-center gap-2 rounded-full border border-white/60 bg-white/70 px-4 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.4em] text-slate-500 backdrop-blur-sm transition-colors dark:border-white/15 dark:bg-white/5 dark:text-slate-300">
                         Welcome back
-                        <span className="inline-flex h-1 w-1 rounded-full bg-[#0f62fe] dark:bg-[#82aaff]" />
+                        <span className="inline-flex h-1 w-1 rounded-full bg-[#B75A39] dark:bg-[#C76843]" />
                       </span>
                       <div className="relative">
                         <div className="pointer-events-none absolute left-1/2 top-1/2 h-28 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(15,98,254,0.22),transparent_65%)] blur-2xl opacity-60 transition-opacity duration-700 dark:bg-[radial-gradient(circle_at_center,rgba(130,170,255,0.24),transparent_65%)]" />
                         <div className="pointer-events-none absolute left-1/2 top-1/2 h-40 w-[22rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[conic-gradient(from_0deg,rgba(15,98,254,0.18),rgba(255,255,255,0),rgba(82,112,255,0.28),rgba(255,255,255,0))] blur-3xl opacity-30 animate-[spin_18s_linear_infinite] dark:bg-[conic-gradient(from_0deg,rgba(130,170,255,0.25),rgba(255,255,255,0),rgba(66,152,255,0.32),rgba(255,255,255,0))]" />
                         <h2
-                          className={`${playfair.className} relative flex flex-wrap items-baseline justify-center gap-2 text-4xl leading-snug tracking-tight text-slate-900 sm:flex-nowrap sm:text-[2.7rem] dark:text-white`}
+                          className={`${playfair.className} relative flex flex-wrap items-baseline justify-center gap-2 text-4xl leading-snug tracking-tight text-foreground sm:flex-nowrap sm:text-[2.7rem] dark:text-white`}
                         >
-                          <span className="text-slate-900 dark:text-white">{salutation}</span>
+                          <span className="text-foreground dark:text-white">{salutation}</span>
                           <span className="text-slate-800/60 dark:text-white/60">,</span>
-                          <span className="bg-gradient-to-r from-[#101320] via-[#0f62fe] to-[#101320] bg-clip-text text-4xl font-semibold italic text-transparent sm:text-[2.8rem] dark:from-white/60 dark:via-[#82aaff] dark:to-white/60 whitespace-nowrap">
+                          <span className="bg-gradient-to-r from-[#101320] via-[#B75A39] to-[#101320] bg-clip-text text-4xl font-semibold italic text-transparent sm:text-[2.8rem] dark:from-white/60 dark:via-[#C76843] dark:to-white/60 whitespace-nowrap">
                             {firstName}
                           </span>
                         </h2>
@@ -1422,25 +1422,25 @@ export default function ChatPage() {
                       {["Generate immersive reports", "Track market shifts", "Ideate new strategies"].map((badge) => (
                         <div
                           key={badge}
-                          className="group/badge relative overflow-hidden rounded-full border border-white/70 bg-white/80 px-5 py-2 text-xs font-medium text-slate-600 shadow-[0_12px_30px_rgba(15,17,26,0.14)] transition-all hover:-translate-y-1 hover:border-[#0f62fe]/40 hover:bg-white hover:text-[#0f62fe] dark:border-white/10 dark:bg-white/10 dark:text-slate-300 dark:shadow-[0_18px_45px_rgba(0,0,0,0.55)] dark:hover:border-[#82aaff]/40 dark:hover:text-[#82aaff]"
+                          className="group/badge relative overflow-hidden rounded-full border border-white/70 bg-white/80 px-5 py-2 text-xs font-medium text-slate-600 shadow-[0_12px_30px_rgba(15,17,26,0.14)] transition-all hover:-translate-y-1 hover:border-[#B75A39]/40 hover:bg-white hover:text-[#B75A39] dark:border-white/10 dark:bg-white/10 dark:text-slate-300 dark:shadow-[0_18px_45px_rgba(0,0,0,0.55)] dark:hover:border-[#C76843]/40 dark:hover:text-[#C76843]"
                         >
                           <span className="relative z-10">{badge}</span>
-                          <span className="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#0f62fe]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/badge:opacity-100 dark:via-[#82aaff]/20" />
+                          <span className="absolute inset-0 -z-0 bg-gradient-to-r from-transparent via-[#B75A39]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover/badge:opacity-100 dark:via-[#C76843]/20" />
                         </div>
                       ))}
                     </div> */}
 
                     <div className="flex flex-row flex-wrap items-center justify-center gap-4 pt-2 text-xs text-slate-400 dark:text-slate-500">
                       <div className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-4 py-2 shadow-sm transition hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/5">
-                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-[#0f62fe] dark:bg-[#82aaff]" />
+                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-[#B75A39] dark:bg-[#C76843]" />
                         Ultra-fast insights & sources
                       </div>
                       <div className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-4 py-2 shadow-sm transition hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/5">
-                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-[#1f6feb] dark:bg-[#4e8cff]" />
+                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-[#B75A39] dark:bg-[#C76843]" />
                         Charts & visualizations
                       </div>
                       <div className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/60 px-4 py-2 shadow-sm transition hover:-translate-y-0.5 dark:border-white/10 dark:bg-white/5">
-                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-[#1f6feb] dark:bg-[#4e8cff]" />
+                        <span className="inline-flex h-2.5 w-2.5 rounded-full bg-[#B75A39] dark:bg-[#C76843]" />
                         Image & video recommendations engine
                       </div>
                     </div>
