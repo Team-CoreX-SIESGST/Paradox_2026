@@ -13,6 +13,7 @@ import {
   type AssistantStatusMap,
 } from "@/components/ui/typing-indicator"
 import {
+  ArrowLeft,
   ThumbsUp,
   ThumbsDown,
   Search,
@@ -36,6 +37,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { FeedbackDialog } from "@/components/ui/feedback-dialog"
 import { toast } from "sonner"
 import { TTSButton } from "@/components/ui/tts-button"
+import Link from "next/link"
 
 function normalizeImageResults(raw: unknown): ImageResult[] | undefined {
   if (!Array.isArray(raw)) return undefined
@@ -939,6 +941,14 @@ export default function ChatPage() {
           <div className="flex h-[60px] w-full items-center justify-between gap-3 sm:gap-6 md:grid md:grid-cols-[auto_minmax(0,1fr)_auto]">
             {/* Left Section - Logo */}
             <div className="flex items-center gap-3 sm:gap-4">
+              <Link
+                href="/dashboard"
+                className="inline-flex h-9 items-center gap-1 rounded-full border border-border-subtle bg-background px-3 text-sm font-medium text-foreground shadow-sm transition-colors duration-200 hover:border-crail/40 hover:text-crail focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-crail/30"
+                aria-label="Back to dashboard"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span className="hidden sm:inline">Back</span>
+              </Link>
               <Image src="/logo14.png" alt="RegIntel logo" width={40} height={40} className="rounded-xl shadow-sm" />
               <div className="flex flex-col justify-center">
                 <h1 className={`${playfair.className} relative flex flex-wrap items-baseline justify-center gap-2 text-sm font-semibold leading-snug tracking-tight text-foreground sm:flex-nowrap sm:text-[1rem]`}>
