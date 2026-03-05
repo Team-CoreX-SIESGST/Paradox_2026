@@ -2,6 +2,7 @@
 import fetch from "node-fetch";
 import { RESEARCH_ASSISTANT_PROMPT } from "../prompts/researchAssistantPrompt.js";
 import { REAL_ESTATE_EXPERT_PROMPT } from "../prompts/realestateexpert.js";
+import { RBI_COMPLIANCE_PROMPT } from "../prompts/RBI_system_prompt.js";
 import { CRYPTO_EXPERT_PROMPT } from "../prompts/cryptoexpert.js";
 import { PORTFOLIO_EXPERT_PROMPT as INVESTMENT_EXPERT_PROMPT } from "../prompts/investmentexpert.js";
 import { STOCK_EXPERT_PROMPT } from "../prompts/stockexpert.js";
@@ -13,13 +14,13 @@ import env from "../config/env.js";
 
 // Map of expert types to their corresponding prompts
 const EXPERT_PROMPTS = {
-  'research': RESEARCH_ASSISTANT_PROMPT,
+  'research': RBI_COMPLIANCE_PROMPT,
   'real-estate': REAL_ESTATE_EXPERT_PROMPT,
   'crypto': CRYPTO_EXPERT_PROMPT,
   'investment': INVESTMENT_EXPERT_PROMPT,
   'stock': STOCK_EXPERT_PROMPT,
   'retirement-tax': RETIREMENT_TAX_EXPERT_PROMPT,
-  'default': RESEARCH_ASSISTANT_PROMPT,
+  'default': RBI_COMPLIANCE_PROMPT,
 };
 
 const GEMINI_API_KEYS = [
