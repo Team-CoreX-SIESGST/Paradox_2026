@@ -7,7 +7,6 @@ import { RESEARCH_ASSISTANT_PROMPT } from '../prompts/researchAssistantPrompt.js
 import YouTubeMCP from '../helpers/youtubeSearch.js';
 import env from '../config/env.js';
 import { processMermaidBlocks } from '../helpers/mermaid.js';
-import { searchKnowledgeGraph } from '../helpers/neo4jGraphRAG.js';
 
 const supabase = createClient(env.SUPABASE_URL, env.SUPABASE_ANON_KEY);
 
@@ -417,31 +416,6 @@ export async function handleChatStreamGenerate(req, res) {
       // ignore upload extraction errors to keep streaming resilient
     }
 
-    // ── Graph RAG: always query Neo4j and inject context ─────────────────────
-    let graphRagContext = "";
-    let graphRagNodes = [];
-    try {
-      console.log(`[chatStream] Searching knowledge graph for: "${prompt.slice(0, 80)}…"`);
-      const ragResult = await searchKnowledgeGraph(prompt);
-      graphRagNodes = ragResult.nodes || [];
-      if (ragResult.context) {
-        graphRagContext = ragResult.context;
-        console.log(`[chatStream] Injecting ${graphRagContext.length} chars of context (${graphRagNodes.length} nodes, intent: ${ragResult.intent})`);
-      } else {
-        console.log(`[chatStream] Knowledge graph returned no matching nodes`);
-      }
-    } catch (ragErr) {
-      console.warn(`[chatStream] search failed (non-fatal):`, ragErr.message);
-    }
-
-    if (graphRagContext) {
-      composedText =
-        `${graphRagContext}\n\n` +
-        `IMPORTANT: Use the RBI Knowledge Graph context above to ground your answer. ` +
-        `Cite the specific Circular ID or section (e.g. "per RBI Circular RBI/2023-24/56") when referencing a rule.\n\n` +
-        composedText;
-    }
-
     // Add current user message (text + any image inlineData)
     const userParts = [{ text: composedText }, ...imageParts];
     chatHistory.push({
@@ -488,26 +462,6 @@ export async function handleChatStreamGenerate(req, res) {
     // Send conversation ID immediately
     res.write(`event: conversationId\n`);
     res.write(`data: ${JSON.stringify({ conversationId: currentConversationId })}\n\n`);
-
-    if (graphRagNodes && graphRagNodes.length > 0) {
-      const formattedGraphSources = graphRagNodes.map(node => {
-        const id = node.id || node.circular || node.from || node.source || null;
-        const title = node.title || node.circularTitle || node.toTitle || node.sourceTitle || null;
-        return {
-          type: node.type,
-          id,
-          title,
-          detail: node.obligation || node.prohibition || node.penalty
-            || node.condition || node.definition || node.snippet
-            || node.summary || null,
-          clause: node.clause || node.section || null,
-          appliesTo: node.appliesTo || null,
-        };
-      });
-      res.write(`event: graphSources\n`);
-      res.write(`data: ${JSON.stringify({ graphSources: formattedGraphSources })}\n\n`);
-      console.log(`[chatStream] Emitted ${formattedGraphSources.length} graph source(s) via SSE`);
-    }
 
     if (imageResults.length > 0) {
       res.write(`event: images\n`);
