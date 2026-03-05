@@ -7,6 +7,7 @@ import { PORTFOLIO_EXPERT_PROMPT as INVESTMENT_EXPERT_PROMPT } from "../prompts/
 import { STOCK_EXPERT_PROMPT } from "../prompts/stockexpert.js";
 import { RETIREMENT_TAX_EXPERT_PROMPT } from "../prompts/retierment_tax_expert.js";
 import { generateExcalidrawFlowchart } from "./groq.js";
+import { searchKnowledgeGraph } from "./neo4jGraphRAG.js";
 
 import env from "../config/env.js";
 
@@ -40,6 +41,8 @@ const CONFIG = {
   TITLE_FETCH_TIMEOUT: 5000, // 5 seconds for title fetching
   MAX_TITLE_LENGTH: 100, // Maximum title length
 };
+
+// Graph RAG is always queried — no keyword gate.
 
 // Excalidraw flowchart generation function declaration for Gemini
 const EXCALIDRAW_FUNCTION_DECLARATION = {
@@ -750,7 +753,32 @@ export async function generateContent(
       });
     }
 
+    // ── Graph RAG: always query Neo4j and inject context ─────────────────────
+    let graphRagContext = "";
+    let graphRagNodes = [];
+    try {
+      console.log(`[GraphRAG] Searching knowledge graph for: "${prompt.slice(0, 80)}…"`);
+      const ragResult = await searchKnowledgeGraph(prompt);
+      graphRagNodes = ragResult.nodes || [];
+      if (ragResult.context) {
+        graphRagContext = ragResult.context;
+        console.log(`[GraphRAG] Injecting ${graphRagContext.length} chars of context (${graphRagNodes.length} nodes, intent: ${ragResult.intent})`);
+      } else {
+        console.log(`[GraphRAG] Knowledge graph returned no matching nodes`);
+      }
+    } catch (ragErr) {
+      // Non-fatal — Gemini answers without graph context if Neo4j is down
+      console.warn(`[GraphRAG] search failed (non-fatal):`, ragErr.message);
+    }
+
     let composedPrompt = prompt || '';
+    if (graphRagContext) {
+      composedPrompt =
+        `${graphRagContext}\n\n` +
+        `IMPORTANT: Use the RBI Knowledge Graph context above to ground your answer. ` +
+        `Cite the specific Circular ID or section (e.g. "per RBI Circular RBI/2023-24/56") when referencing a rule.\n\n` +
+        composedPrompt;
+    }
     if (uploadedText) {
       composedPrompt += `\n\n--- Uploaded Files Text ---\n${uploadedText}`;
     }
@@ -890,6 +918,30 @@ export async function generateContent(
         result.timestamp = new Date().toISOString();
         result.processingTime = Date.now() - startTime;
         result.attempts = attemptsCount;
+
+        // Attach graph RAG nodes as a first-class field so callers
+        // can render a "Knowledge Graph Sources" section in the UI.
+        if (graphRagNodes.length > 0) {
+          result.graphSources = graphRagNodes.map(node => {
+            // Build a stable source label regardless of node type
+            const id = node.id || node.circular || node.from || node.source || null;
+            const title = node.title || node.circularTitle || node.toTitle || node.sourceTitle || null;
+            return {
+              type: node.type,
+              id,
+              title,
+              // type-specific detail field
+              detail: node.obligation || node.prohibition || node.penalty
+                || node.condition || node.definition || node.snippet
+                || node.summary || null,
+              clause: node.clause || node.section || null,
+              appliesTo: node.appliesTo || null,
+            };
+          });
+          console.log(`[GraphRAG] Attached ${result.graphSources.length} graph source(s) to response`);
+        } else {
+          result.graphSources = [];
+        }
 
         console.log(`Request completed successfully in ${result.processingTime}ms`);
         return result;

@@ -38,6 +38,10 @@ console.log(`- GEMINI_API_KEY: ${process.env.GEMINI_API_KEY ? '✅ set' : '❌ n
 console.log(`- GEMINI_API_KEY2: ${process.env.GEMINI_API_KEY2 ? '✅ set' : '❌ not set'}`);
 console.log(`- SUPABASE_URL: ${process.env.SUPABASE_URL ? '✅ set' : '❌ not set'}`);
 console.log(`- GROQ_KEY: ${process.env.GROQ_KEY ? '✅ set' : '❌ not set'}`);
+console.log(`- NEO4J_URI: ${process.env.NEO4J_URI ? '✅ set' : '⚠️  not set (GraphRAG disabled)'}`);
+console.log(`- NEO4J_USERNAME: ${process.env.NEO4J_USERNAME || process.env.NEO4J_USER ? '✅ set' : '⚠️  not set (GraphRAG disabled)'}`);
+console.log(`- NEO4J_PASSWORD: ${process.env.NEO4J_PASSWORD ? '✅ set' : '⚠️  not set (GraphRAG disabled)'}`);
+console.log(`- NEO4J_DATABASE: ${process.env.NEO4J_DATABASE ? '✅ set' : '⚠️  using default (neo4j)'}`);
 console.log('='.repeat(50) + '\n');
 
 // Export environment variables

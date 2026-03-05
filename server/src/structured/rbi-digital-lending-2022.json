@@ -1,0 +1,170 @@
+{
+  "circular": {
+    "id": "rbi-digital-lending-2022",
+    "title": "Guidelines on Digital Lending",
+    "date": "2022-09-02",
+    "circular_number": "RBI/2022-23/111",
+    "type": "Guidelines",
+    "topic": "Digital Lending",
+    "applicable_to": [
+      "Commercial Banks",
+      "Primary (Urban) Co-operative Banks",
+      "State Co-operative Banks",
+      "District Central Co-operative Banks",
+      "Non-Banking Financial Companies",
+      "Housing Finance Companies",
+      "Regulated Entities"
+    ],
+    "status": "Active",
+    "summary": "The Reserve Bank of India has issued guidelines on digital lending to manage risks and protect customers. The guidelines apply to all regulated entities and cover aspects such as customer protection, conduct issues, and technology and data requirements. The guidelines aim to ensure that digital lending is carried out in a fair and transparent manner."
+  },
+  "clauses": [
+    {
+      "clause_number": "1.1",
+      "text": "Provide a framework for managing risks in digital lending.",
+      "summary": "Framework for managing risks in digital lending",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "1.2",
+      "text": "These guidelines applies to all Regulated Entities (REs).",
+      "summary": "Applicability of guidelines to Regulated Entities",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "2.1",
+      "text": "Digital Lending: A remote and automated lending process, largely by use of seamless digital technologies.",
+      "summary": "Definition of Digital Lending",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "2.2",
+      "text": "Lending Service Provider (LSP): An agent of a Regulated Entity who carries out one or more of lender’s functions.",
+      "summary": "Definition of Lending Service Provider",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "3.1",
+      "text": "All loan dispersals and repayments shall be executed only between the bank accounts of borrower and the RE without any pass-through or pool account of the LSP.",
+      "summary": "Loan dispersal and repayment requirements",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3.2",
+      "text": "Any fees, charges, etc., payable to LSPs shall be paid directly by the RE and not by the borrower.",
+      "summary": "Payment of fees and charges to LSPs",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3.3",
+      "text": "Penal interest/charges levied, if any, on the borrowers shall be based on the outstanding amount of the loan, and kept transparent.",
+      "summary": "Penal interest and charges requirements",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3.4",
+      "text": "If a RE fails to disclose the Key Fact Statement (KFS) upfront, a penalty of ₹10,000 per violation shall be imposed.",
+      "summary": "Penalty for non-disclosure of Key Fact Statement",
+      "type": "Penalty"
+    },
+    {
+      "clause_number": "4.1",
+      "text": "REs shall ensure that LSPs engaged by them do not store personal information of borrowers except some basic minimal data (viz., name, address, contact details of the customer).",
+      "summary": "Data storage requirements for LSPs",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5.1",
+      "text": "This circular modifies the Fair Practices Code guidelines.",
+      "summary": "Modification of Fair Practices Code guidelines",
+      "type": "Procedural"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Provide a framework for managing risks in digital lending.",
+      "plain_english": "Regulated entities must have a framework to manage risks in digital lending.",
+      "applicable_to": [
+        "Regulated Entities"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "1.1"
+    },
+    {
+      "text": "All loan dispersals and repayments shall be executed only between the bank accounts of borrower and the RE without any pass-through or pool account of the LSP.",
+      "plain_english": "Loans must be disbursed and repaid directly between the borrower and the regulated entity, without using the LSP's account.",
+      "applicable_to": [
+        "Regulated Entities"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "3.1"
+    },
+    {
+      "text": "Any fees, charges, etc., payable to LSPs shall be paid directly by the RE and not by the borrower.",
+      "plain_english": "Regulated entities must pay fees and charges to LSPs directly, and not pass them on to the borrower.",
+      "applicable_to": [
+        "Regulated Entities"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "3.2"
+    },
+    {
+      "text": "Penal interest/charges levied, if any, on the borrowers shall be based on the outstanding amount of the loan, and kept transparent.",
+      "plain_english": "Any penal interest or charges levied on borrowers must be based on the outstanding loan amount and be transparent.",
+      "applicable_to": [
+        "Regulated Entities"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "3.3"
+    },
+    {
+      "text": "REs shall ensure that LSPs engaged by them do not store personal information of borrowers except some basic minimal data (viz., name, address, contact details of the customer).",
+      "plain_english": "Regulated entities must ensure that LSPs do not store personal information of borrowers, except for basic data such as name, address, and contact details.",
+      "applicable_to": [
+        "Regulated Entities"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "4.1"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "LSPs shall not store personal information of borrowers except some basic minimal data (viz., name, address, contact details of the customer).",
+      "plain_english": "LSPs are not allowed to store personal information of borrowers, except for basic data such as name, address, and contact details.",
+      "applicable_to": [
+        "Lending Service Providers"
+      ],
+      "source_clause": "4.1"
+    }
+  ],
+  "penalties": [
+    {
+      "amount": "₹10,000",
+      "condition": "Failure to disclose Key Fact Statement upfront",
+      "section": "3.4"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Digital Lending",
+      "definition": "A remote and automated lending process, largely by use of seamless digital technologies.",
+      "plain_english": "Digital lending refers to the use of technology to provide loans remotely and automatically."
+    },
+    {
+      "term": "Lending Service Provider (LSP)",
+      "definition": "An agent of a Regulated Entity who carries out one or more of lender’s functions.",
+      "plain_english": "A Lending Service Provider is an agent of a regulated entity that performs certain functions on behalf of the lender."
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "Fair Practices Code guidelines",
+      "relationship": "modifies"
+    }
+  ]
+}
