@@ -1,0 +1,111 @@
+{
+  "circular": {
+    "id": "2025-26_Prudential-Norms-on-Capital-Adequacy-Primary-Urban-Co-operative-Banks-UCBs",
+    "title": "Master Circular - Prudential Norms on Capital Adequacy - Primary (Urban) Co-operative Banks (UCBs)",
+    "date": "2025-04-01",
+    "circular_number": "RBI/2025-26/09 — DOR.CAP.REC.03/09.18.201/2025-26",
+    "type": "Circular",
+    "topic": "Capital Adequacy",
+    "applicable_to": [
+      "Primary (Urban) Co-operative Banks"
+    ],
+    "status": "Withdrawn",
+    "summary": "This Master Circular consolidates the prudential norms regarding capital adequacy for Urban Co-operative Banks (UCBs). It establishes a tiered regulatory framework based on deposit size and geographical reach. UCBs are mandated to maintain minimum Capital to Risk-Weighted Assets Ratios (CRAR) of 9% or 12% depending on their tier, alongside specific minimum net worth requirements. The circular details the components of Tier I and Tier II capital, provides a comprehensive list of risk weights for various asset classes, and sets guidelines for the issuance of regulatory capital instruments."
+  },
+  "clauses": [
+    {
+      "clause_number": "Section 11 of BR Act (AACS)",
+      "text": "No co-operative bank shall carry on business unless the aggregate value of paid-up capital and reserves is at least one lakh rupees.",
+      "summary": "Minimum capital requirement for co-operative banks",
+      "type": "Statutory Requirement"
+    },
+    {
+      "clause_number": "Section 3",
+      "text": "UCBs shall have minimum net worth as under: * Tier 1 UCBs operating in a single district: ₹2 crore. * All other UCBs (all tiers): ₹5 crore.",
+      "summary": "Minimum net worth requirements for UCBs",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "Section 4",
+      "text": "Tier 1 UCBs must maintain a minimum CRAR of 9% of Risk Weighted Assets (RWAs). Tier 2 to 4 UCBs must maintain a minimum CRAR of 12% of RWAs.",
+      "summary": "Minimum CRAR requirements for UCBs",
+      "type": "Obligation"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Maintain minimum CRAR of 9% (Tier 1) or 12% (Tier 2 to 4) on an ongoing basis.",
+      "plain_english": "UCBs must maintain a minimum capital to risk-weighted assets ratio",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "Section 4"
+    },
+    {
+      "text": "Achieve phased CRAR of 10% by March 2024, 11% by March 2025, and 12% by March 2026.",
+      "plain_english": "Tier 2 to 4 UCBs must meet phased CRAR targets",
+      "applicable_to": [
+        "Tier 2, 3, and 4 UCBs"
+      ],
+      "deadline_days": "31 March 2026",
+      "frequency": "One-time",
+      "source_clause": "Section 4"
+    },
+    {
+      "text": "Maintain minimum net worth of ₹2 crore (single-district Tier 1) or ₹5 crore (all others).",
+      "plain_english": "UCBs must maintain minimum net worth",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": "31 March 2028",
+      "frequency": "One-time",
+      "source_clause": "Section 3"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "Borrowings (except against FDs) must be linked to shareholdings.",
+      "plain_english": "UCBs must link borrowings to shareholdings",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "source_clause": "Section 6"
+    }
+  ],
+  "penalties": [
+    {
+      "amount": "Not specified",
+      "condition": "Non-compliance with CRAR requirements",
+      "section": "Section 4"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Tier 1 UCBs",
+      "definition": "All unit UCBs and salary earners’ UCBs (irrespective of size), and other UCBs with deposits up to ₹100 crore.",
+      "plain_english": "Small UCBs with limited deposits"
+    },
+    {
+      "term": "Net Worth",
+      "definition": "Paid-up capital plus free reserves and other eligible items minus intangible assets and losses.",
+      "plain_english": "UCB's total worth"
+    },
+    {
+      "term": "CRAR",
+      "definition": "Capital to Risk-Weighted Assets Ratio, computed as Eligible Total Capital divided by Total Risk-Weighted Assets.",
+      "plain_english": "UCB's capital adequacy ratio"
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "Master Circular DOR.CRE.REC.No.27/07.10.002/2023-24",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Circular DoR(PCB).BPD.Cir.No.8/12.05.002/2019-20",
+      "relationship": "references"
+    }
+  ]
+}

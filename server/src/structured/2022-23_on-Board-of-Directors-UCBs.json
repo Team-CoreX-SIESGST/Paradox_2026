@@ -1,0 +1,249 @@
+{
+  "circular": {
+    "id": "2025-26/07_on-Board-of-Directors-UCBs",
+    "title": "Master Circular on Board of Directors - UCBs",
+    "date": "2025-04-01",
+    "circular_number": "RBI/2025-26/07 — DoR.HGG.GOV.No.1/18.10.010/2025-26",
+    "type": "Master Circular",
+    "topic": "Governance",
+    "applicable_to": [
+      "Primary (Urban) Co-operative Banks (UCBs)"
+    ],
+    "status": "Withdrawn",
+    "summary": "This Master Circular consolidates guidelines on the constitution, role, and responsibilities of the Board of Directors in Urban Co-operative Banks. It requires a minimum level of professionalism on the Board and defines a clear separation between policy oversight and day-to-day administration. The circular also prohibits non-statutory honorary titles and limits donations to trusts where directors have interests."
+  },
+  "clauses": [
+    {
+      "clause_number": "1.1",
+      "text": "Primary (urban) co-operative banks (UCBs or banks) function under the regulation and supervision of RBI under the BR Act, 1949 and RBI Act, 1934.",
+      "summary": "UCBs are regulated by RBI under the BR Act and RBI Act",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "1.2",
+      "text": "The directors on the boards of UCBs must be knowledgeable and persons of high integrity.",
+      "summary": "Directors must be knowledgeable and of high integrity",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "1.3",
+      "text": "UCBs (other than those having deposit size less than Rs.100 crore and salary earners’ banks) are also required to constitute a Board of Management (BoM) in accordance with the guidelines contained in RBI circular dated December 31, 2019.",
+      "summary": "UCBs must constitute a Board of Management",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "1.4",
+      "text": "Persons engaged in money lending, financing and investment activities (individual or via concern) or those convicted of criminal offences including moral turpitude are ineligible to be directors.",
+      "summary": "Ineligible persons cannot be directors",
+      "type": "Prohibition"
+    },
+    {
+      "clause_number": "1.6",
+      "text": "UCBs are directed not to create any honorary positions/titles at Board level or confer such titles that are non-statutory in nature (e.g., Chairman Emeritus, Group Chairman).",
+      "summary": "UCBs cannot create honorary positions",
+      "type": "Prohibition"
+    },
+    {
+      "clause_number": "2.1",
+      "text": "The Board of Directors (BOD or Board) is primarily concerned with formulation of policies and exercise of overall supervision and control. Day-to-day administration must be left to the Managing Director (MD) / Chief Executive Officer (CEO).",
+      "summary": "Board is responsible for policy and oversight",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "2.2",
+      "text": "It should be ensured that all circulars and other material relating to policies issued by the RBI are placed before the Board for information and appropriate action.",
+      "summary": "RBI circulars must be placed before the Board",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "2.3",
+      "text": "Directors of UCBs are advised to be guided by several guidelines:",
+      "summary": "Directors must follow guidelines",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "3.1.1",
+      "text": "An apex Audit Committee (ACB) should be set up at the Board level. It may consist of a chairman and three/four directors, with one or more being chartered accountants or having experience in management, finance, accountancy, and audit.",
+      "summary": "Audit Committee must be set up",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3.1.2",
+      "text": "The ACB should review RBI guideline implementation and submit a note to the Board quarterly. Major duties include: Providing direction and oversight to the entire audit function, Reviewing internal inspection/audit function systems and follow-up, Compliance with statutory/concurrent/RBI audit reports, Reviewing accounting policies for transparency and adequacy.",
+      "summary": "Audit Committee duties",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "3.2",
+      "text": "UCBs having asset size of ₹5000 crore or above (as on March 31 of the previous year) are advised to set up a Risk Management Committee (of the Board).",
+      "summary": "Risk Management Committee must be set up",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4",
+      "text": "Directors should bestow attention on periodical reviews. An illustrative list with periodicity is provided in Annex 2.",
+      "summary": "Directors must review periodically",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5.1",
+      "text": "UCBs are prohibited from giving donations to trusts and institutions where directors and/or their relatives hold a position or are interested, even within the 1% profit ceiling.",
+      "summary": "Donations to trusts are prohibited",
+      "type": "Prohibition"
+    },
+    {
+      "clause_number": "5.2",
+      "text": "Relatives are defined as members of a Hindu Undivided Family, husband and wife, or specified relations (Father, Mother, Son, Son's wife, Daughter, Daughter's husband, Brother, Brother's wife, Sister, Sister's husband).",
+      "summary": "Definition of relatives",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "6",
+      "text": "All expenses on Board meetings must be shown against P&L Account item 3 (\"Directors and Local Committee Members – Fees and Allowance\").",
+      "summary": "Expenses on Board meetings",
+      "type": "Obligation"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Maintain at least two professional directors with middle/senior banking experience or qualifications in law/finance/accountancy.",
+      "plain_english": "Ensure at least two directors have relevant experience or qualifications",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "1.2"
+    },
+    {
+      "text": "Constitute a Board of Management (BoM) for professional oversight of banking activities.",
+      "plain_english": "Set up a Board of Management for oversight",
+      "applicable_to": [
+        "UCBs with deposits ≥ ₹100 crore"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "1.3"
+    },
+    {
+      "text": "Eliminate and refrain from creating non-statutory honorary titles like 'Chairman Emeritus' or 'Group Chairman'.",
+      "plain_english": "Do not create honorary titles",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "1.6"
+    },
+    {
+      "text": "Ensure all RBI policy circulars are placed before the Board for information and action.",
+      "plain_english": "Place RBI circulars before the Board",
+      "applicable_to": [
+        "Bank Management"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "2.2"
+    },
+    {
+      "text": "Establish an Audit Committee of the Board (ACB) to oversee internal audit and compliance.",
+      "plain_english": "Set up an Audit Committee",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "3.1.1"
+    },
+    {
+      "text": "Establish a Risk Management Committee of the Board.",
+      "plain_english": "Set up a Risk Management Committee",
+      "applicable_to": [
+        "UCBs with assets ≥ ₹5000 crore"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "3.2"
+    },
+    {
+      "text": "Prohibit donations to trusts/institutions where directors or their relatives hold positions or are interested.",
+      "plain_english": "Do not donate to trusts with director interests",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "5.1"
+    },
+    {
+      "text": "Ensure directors do not participate in Board discussions where they have a direct or indirect interest.",
+      "plain_english": "Directors must not participate in discussions with conflicts of interest",
+      "applicable_to": [
+        "Board of Directors"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "2.3"
+    },
+    {
+      "text": "Submit periodic reviews (Monthly, Quarterly, Half-yearly, Annual) to the Board as per the specified calendar.",
+      "plain_english": "Submit periodic reviews to the Board",
+      "applicable_to": [
+        "Bank Management"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "4"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "UCBs are directed not to create any honorary positions/titles at Board level or confer such titles that are non-statutory in nature (e.g., Chairman Emeritus, Group Chairman).",
+      "plain_english": "Do not create honorary positions",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "source_clause": "1.6"
+    },
+    {
+      "text": "UCBs are prohibited from giving donations to trusts and institutions where directors and/or their relatives hold a position or are interested, even within the 1% profit ceiling.",
+      "plain_english": "Do not donate to trusts with director interests",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "source_clause": "5.1"
+    }
+  ],
+  "penalties": [],
+  "definitions": [
+    {
+      "term": "Professional Directors",
+      "definition": "Directors having suitable banking experience at a middle/senior management level or relevant professional qualifications in law, accountancy, or finance.",
+      "plain_english": "Directors with relevant experience or qualifications"
+    },
+    {
+      "term": "Board of Management (BoM)",
+      "definition": "A professional body constituted within the bank (for UCBs over Rs. 100 crore deposits) to oversee banking-related activities, separate from the primary BOD.",
+      "plain_english": "A committee to oversee banking activities"
+    },
+    {
+      "term": "Relative",
+      "definition": "Members of a Hindu Undivided Family, husband and wife, or specified relations (Father, Mother, Son, Son's wife, Daughter, Daughter's husband, Brother, Brother's wife, Sister, Sister's husband).",
+      "plain_english": "Family members or spouses"
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "DoR(PCB).BPD.Cir.No.8/12.05.002/2019-20",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "DOR.CRE(DIR).REC.26/21.04.103/2021-22",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "UBD.No.I&L (PCBs) 39/12.05.00/96-97",
+      "relationship": "references"
+    }
+  ]
+}

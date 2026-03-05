@@ -1,0 +1,325 @@
+{
+  "circular": {
+    "id": "2025-26_Management-of-Advances-UCBs",
+    "title": "Master Circular - Management of Advances - UCBs",
+    "date": "2025-04-01",
+    "circular_number": "RBI/2025-26/18 (DOR.CRE.REC.No.13/07.10.002/2025-26)",
+    "type": "Master Circular",
+    "topic": "General",
+    "applicable_to": [
+      "Primary (Urban) Co-operative Banks (UCBs)"
+    ],
+    "status": "Active",
+    "summary": "This Master Circular consolidates instructions on management of advances by Primary (Urban) Co-operative Banks, covering loan policies, working capital, credit administration, and specific lending activities. It outlines requirements for Board-approved loan policies, assessment methodologies, and credit administration protocols. The circular also provides guidelines on lending against gold, real estate, and to SHGs/JLGs."
+  },
+  "clauses": [
+    {
+      "clause_number": "1",
+      "text": "UCBs must lay down transparent policies for credit dispensation with board approval, keeping in view credit exposure norms and RBI guidelines.",
+      "summary": "UCBs must have transparent credit policies",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "2",
+      "text": "Assessment for borrowers (other than MSE) up to ₹1 crore and MSE up to ₹5 crore can be made on projected annual turnover.",
+      "summary": "Working capital assessment methodology",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3",
+      "text": "The loan component should normally be 80% for borrowers with limits of ₹10 crore and above.",
+      "summary": "Loan component requirement",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.1",
+      "text": "UCBs must ensure interest rates are transparent, known to customers, and published in every branch.",
+      "summary": "Interest rate transparency",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.3",
+      "text": "UCBs must insist on a declaration that the account holder is not enjoying credit facilities with any other bank.",
+      "summary": "No multiple credit facilities",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.5",
+      "text": "UCBs must ensure borrowers pay provident fund and other statutory dues promptly.",
+      "summary": "Prompt payment of statutory dues",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.6",
+      "text": "The Board must delegate specific powers to functionaries. Transgressions must be reported to the Head Office immediately.",
+      "summary": "Delegation of powers and reporting",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.7",
+      "text": "UCBs are responsible for ensuring the proper end-use of funds.",
+      "summary": "Proper end-use of funds",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.10",
+      "text": "UCBs must have a mechanism to monitor the end-use of funds.",
+      "summary": "Monitoring end-use of funds",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5",
+      "text": "UCBs must exchange information about the conduct of borrowers' accounts with other banks at least at quarterly intervals for limits of ₹5 crore and above.",
+      "summary": "Exchange of credit information",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "6",
+      "text": "Restructuring must preserve economic value and not be used for evergreening.",
+      "summary": "Prudential guidelines on restructuring",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "7.1",
+      "text": "The grant of bridge loans or interim finance to any company is totally prohibited.",
+      "summary": "Prohibition on bridge loans",
+      "type": "Prohibition"
+    },
+    {
+      "clause_number": "7.2",
+      "text": "UCBs must frame comprehensive prudential norms relating to ceilings on total real estate loans and exposure limits.",
+      "summary": "Prudential norms for real estate loans",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "7.5",
+      "text": "Loans against gold ornaments must not exceed ₹2 lakh (increased to ₹4 lakh for UCBs meeting specific PSL targets).",
+      "summary": "Loan against gold ornaments",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "8",
+      "text": "UCBs must only purchase/discount bills under LCs for genuine commercial transactions of their constituent borrowers.",
+      "summary": "Discounting/rediscounting of bills",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "9",
+      "text": "Lending must be direct; intermediaries are not permitted.",
+      "summary": "Loans to SHGs/JLGs",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "10",
+      "text": "UCBs must evolve a policy framework for providing relief in areas officially declared as affected by calamities.",
+      "summary": "Relief measures for natural calamities",
+      "type": "Obligation"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Formulate transparent Board-approved policies for credit dispensation for each economic activity.",
+      "plain_english": "Create clear credit policies approved by the Board",
+      "applicable_to": [
+        "UCB Board"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "1"
+    },
+    {
+      "text": "Review the loan policy at least once in a financial year to align with risk appetite and regulations.",
+      "plain_english": "Review loan policy annually",
+      "applicable_to": [
+        "UCB Board"
+      ],
+      "deadline_days": null,
+      "frequency": "Annual",
+      "source_clause": "1"
+    },
+    {
+      "text": "Maintain a 80:20 Loan/Cash Credit mix for borrowers with working capital limits ≥ ₹10 crore.",
+      "plain_english": "Maintain 80:20 loan to cash credit ratio",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "3"
+    },
+    {
+      "text": "Provide a Key Fact Statement (KFS) to all borrowers for loans and advances.",
+      "plain_english": "Provide Key Fact Statement to borrowers",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "4.1"
+    },
+    {
+      "text": "Obtain a 'No Objection Certificate' (NOC) from existing financing banks before extending new credit.",
+      "plain_english": "Obtain NOC from existing financing banks",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "4.3"
+    },
+    {
+      "text": "Ensure penal charges for non-compliance are not capitalized (no interest on charges).",
+      "plain_english": "Do not capitalize penal charges",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "4.10"
+    },
+    {
+      "text": "Prohibit the grant of bridge loans or interim finance to any company.",
+      "plain_english": "Do not grant bridge loans",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "7.1"
+    },
+    {
+      "text": "Maintain a Loan to Value (LTV) ratio not exceeding 75% for gold jewellery loans.",
+      "plain_english": "Maintain LTV ratio for gold loans",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "7.5"
+    },
+    {
+      "text": "Limit total loan repayment obligations of a microfinance household to 50% of monthly income.",
+      "plain_english": "Limit loan repayment obligations",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "9"
+    },
+    {
+      "text": "File security interests relating to immovable, movable, and intangible assets with CERSAI.",
+      "plain_english": "File security interests with CERSAI",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "5"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "The grant of bridge loans or interim finance to any company is totally prohibited.",
+      "plain_english": "Do not grant bridge loans",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "source_clause": "7.1"
+    },
+    {
+      "text": "Advances for the purchase of gold in any form (bullion, coins, etc.) are prohibited.",
+      "plain_english": "Do not advance for gold purchase",
+      "applicable_to": [
+        "All UCBs"
+      ],
+      "source_clause": "7.5"
+    }
+  ],
+  "penalties": [
+    {
+      "amount": "Reclassification to NPA",
+      "condition": "Failure to maintain LTV ratio for gold loans",
+      "section": "7.5"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Aggregate Deposits",
+      "definition": "The sum of demand and time deposits.",
+      "plain_english": "Total deposits"
+    },
+    {
+      "term": "Demand Liabilities",
+      "definition": "Liabilities payable on demand, including current deposits, demand portions of savings deposits, margins against LC/guarantees, and unclaimed deposits.",
+      "plain_english": "Liabilities payable on demand"
+    },
+    {
+      "term": "Time Liabilities",
+      "definition": "Liabilities payable otherwise than on demand, including fixed deposits, cash certificates, and gold deposits.",
+      "plain_english": "Liabilities not payable on demand"
+    },
+    {
+      "term": "Projected Turnover",
+      "definition": "Gross sales including excise duty.",
+      "plain_english": "Expected sales"
+    },
+    {
+      "term": "Unsecured Exposure",
+      "definition": "An exposure where the realizable value of the security is not more than 10%, ab-initio, of the outstanding exposure.",
+      "plain_english": "Exposure without sufficient security"
+    },
+    {
+      "term": "Small and Marginal Farmers",
+      "definition": "Farmers with land holdings of 5 acres or less.",
+      "plain_english": "Small farmers"
+    },
+    {
+      "term": "Microfinance Loan",
+      "definition": "A collateral-free loan to a household having annual income up to ₹3,00,000.",
+      "plain_english": "Loan to low-income household"
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "Master Circular DOR.CRE.REC.No.27/07.10.002/2023-24",
+      "relationship": "supersedes"
+    },
+    {
+      "circular_number": "Circular DoS.CO.PPG.BC.1/11.01.005/2020-21",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Circular DOR.MCS.REC.32/01.01.003/2023-24",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Circular DoR.MCS.REC.38/01.01.001/2023-24",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Direction – RBI (Credit Information Reporting) Directions, 2025",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Direction on Treatment of Wilful Defaulters and Large Defaulters (July 30, 2024)",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "SARFAESI Act, 2002",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Income Tax Act, 1961",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Directions - RBI (Priority Sector Lending – Targets and Classification) Directions, 2025",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Master Direction - Know Your Customer (KYC) Direction, 2016",
+      "relationship": "references"
+    }
+  ]
+}

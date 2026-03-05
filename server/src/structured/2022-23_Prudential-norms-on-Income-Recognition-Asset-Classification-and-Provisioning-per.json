@@ -1,0 +1,316 @@
+{
+  "circular": {
+    "id": "2025-26_Prudential-norms-on-Income-Recognition-Asset-Classification-and-Provisioning-pertaining-to-Advances",
+    "title": "Master Circular - Prudential norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances",
+    "date": "2025-04-01",
+    "circular_number": "RBI/2025-26/13 — DOR.STR.REC.9/21.04.048/2025-26",
+    "type": "Master Circular",
+    "topic": "Asset Classification",
+    "applicable_to": [
+      "All Commercial Banks (excluding RRBs)"
+    ],
+    "status": "Withdrawn",
+    "summary": "This Master Circular consolidates the prudential norms for Income Recognition, Asset Classification, and Provisioning applicable to the advances portfolio of commercial banks. It establishes objective criteria for identifying Non-Performing Assets and Special Mention Accounts, ensuring that income is recognized only on a realization basis for distressed loans. The circular outlines a phased framework for the resolution of stressed assets, specifies provisioning requirements for different asset categories, and mandates robust board oversight and data integrity for credit risk management."
+  },
+  "clauses": [
+    {
+      "clause_number": "1.1-1.3",
+      "text": "Introduces prudential norms to move towards consistency and transparency in published accounts based on recommendations by the Committee on the Financial System (Shri M. Narasimham).",
+      "summary": "Introduction to prudential norms",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "2.1.1-2.1.2",
+      "text": "An asset becomes non-performing when it ceases to generate income for the bank.",
+      "summary": "Definition of Non-Performing Assets",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "2.2",
+      "text": "A CC/OD account is 'out of order' if the balance is continuously in excess of the limit for 90 days, or there are no credits for 90 days, or credits are insufficient to cover interest debited in the previous 90-day period.",
+      "summary": "Definition of 'Out of Order' status",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "2.3",
+      "text": "Any amount is overdue if not paid on the due date. Accounts must be flagged as overdue as part of day-end processes on the due date.",
+      "summary": "Definition of 'Overdue' status",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "3.1",
+      "text": "Policy must be objective and based on record of recovery. Banks shall not charge and take to income account interest on any NPA, including Govt guaranteed accounts.",
+      "summary": "Income Recognition Policy",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3.2",
+      "text": "If an account becomes NPA, entire interest accrued and credited to income in past periods must be reversed if unrealized.",
+      "summary": "Reversal of income",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "3.4",
+      "text": "Reverse interest already charged but uncollected by debiting P&L and stop further application of interest on NPAs. Accrued interest may be recorded in a Memorandum account.",
+      "summary": "Interest Application",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.1",
+      "text": "Classify NPAs into: i. Substandard: Remained NPA for ≤ 12 months. ii. Doubtful: Remained in substandard category for 12 months. iii. Loss: Identified as uncollectible by bank/auditors/RBI but not yet written off.",
+      "summary": "Categories of NPAs",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "4.2.2",
+      "text": "Banks must establish automated systems for identification of NPAs.",
+      "summary": "Guidelines for classification of assets",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.2.5",
+      "text": "Upgrade NPA to 'standard' only if entire arrears of interest and principal are paid by the borrower.",
+      "summary": "Guidelines for classification of assets",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.2.7",
+      "text": "Asset classification must be borrower-wise, not facility-wise. If one facility is NPA, all facilities to that borrower are NPA.",
+      "summary": "Guidelines for classification of assets",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "4.2.9",
+      "text": "Accounts with significant erosion in security (>50% value) should be straightaway classified as Doubtful. If security is <10% of outstanding, classify as Loss asset.",
+      "summary": "Guidelines for classification of assets",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5.1",
+      "text": "Lenders and statutory auditors are responsible for making adequate provisions.",
+      "summary": "General provisioning norms",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "5.2-5.4",
+      "text": "- **Loss Assets:** 100% provision. - **Doubtful Assets (Unsecured):** 100% provision. - **Doubtful Assets (Secured):** 25% (up to 1 year), 40% (1-3 years), 100% (>3 years). - **Substandard Assets:** 15% general provision; 25% if unsecured.",
+      "summary": "Specific Provisioning Requirements",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5.5",
+      "text": "General provisions: - Farm credit/SME/Residential Housing: 0.25%. - Commercial Real Estate (CRE): 1.00%. - CRE-Residential Housing: 0.75%. - All other loans: 0.40%.",
+      "summary": "Provisioning for standard assets",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5.10",
+      "text": "Maintain a PCR (ratio of provisioning to gross NPAs) of not less than 70%.",
+      "summary": "Provisioning Coverage Ratio (PCR)",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "6.2",
+      "text": "Banks must extinguish all recovery means before writing off. Full details of partial and technical write-offs must be disclosed in 'Notes to Accounts'.",
+      "summary": "Writing-off of NPAs",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "8",
+      "text": "Classify accounts into SMA categories immediately on default: - SMA-0: 1-30 days overdue. - SMA-1: 31-60 days overdue. - SMA-2: 61-90 days overdue.",
+      "summary": "Early identification and reporting of stress",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "9",
+      "text": "All lenders must initiate a prima facie review of a borrower within 30 days of default (Review Period) to decide on a resolution strategy.",
+      "summary": "Implementation of Resolution Plan (RP)",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "10",
+      "text": "RPs for aggregate exposure ≥ ₹100 crore require an Independent Credit Evaluation (ICE) by an authorized Credit Rating Agency (CRA).",
+      "summary": "Implementation Conditions for RP",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "11",
+      "text": "If a viable RP is not implemented within 180 days from the end of the review period, make an additional provision of 20%. If delayed to 365 days, total additional provision must reach 35%.",
+      "summary": "Delayed Implementation of Resolution Plan",
+      "type": "Obligation"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Classify loan accounts as NPA if interest/instalment remains overdue for >90 days.",
+      "plain_english": "Classify loans as non-performing if payments are overdue for more than 90 days.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "2.1.1-2.1.2"
+    },
+    {
+      "text": "Recognize income on NPAs on a cash basis only; reverse any unrealized accrued interest.",
+      "plain_english": "Only recognize income on non-performing loans when cash is received, and reverse any previously accrued interest.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "3.1"
+    },
+    {
+      "text": "Classify stressed accounts as SMA-0 (0-30 days), SMA-1 (31-60 days), or SMA-2 (61-90 days) immediately on default.",
+      "plain_english": "Classify stressed accounts into special mention categories based on the number of days overdue.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Daily",
+      "source_clause": "8"
+    },
+    {
+      "text": "Maintain a 15% general provision on the total outstanding of substandard assets.",
+      "plain_english": "Set aside 15% of the total amount of substandard loans as a provision.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Quarterly/Annual",
+      "source_clause": "5.2-5.4"
+    },
+    {
+      "text": "Maintain 100% provision for the unsecured portion of Doubtful assets and 25-100% for the secured portion based on age.",
+      "plain_english": "Set aside 100% of the unsecured portion and 25-100% of the secured portion of doubtful loans as a provision, based on the age of the loan.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Ongoing",
+      "source_clause": "5.2-5.4"
+    },
+    {
+      "text": "Report credit information and SMA status for borrowers with aggregate exposure ≥ ₹5 crore to CRILC.",
+      "plain_english": "Report credit information and special mention account status for large borrowers to the Credit Repository of Information on Large Credits.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "Monthly",
+      "source_clause": "6"
+    },
+    {
+      "text": "Implement a Board-approved policy for the resolution of stressed assets and sign an Inter-Creditor Agreement (ICA) during the 30-day review period.",
+      "plain_english": "Implement a board-approved policy for resolving stressed loans and sign an inter-creditor agreement within 30 days of default.",
+      "applicable_to": [
+        "Bank Board / Lenders"
+      ],
+      "deadline_days": 30,
+      "frequency": "One-time",
+      "source_clause": "9"
+    },
+    {
+      "text": "Ensure any technical write-off of NPAs does not result in the account being shown as a 'standard asset'.",
+      "plain_english": "Ensure that writing off non-performing loans does not result in the loan being classified as a standard loan.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "deadline_days": null,
+      "frequency": "One-time",
+      "source_clause": "6.2"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "Banks shall not charge and take to income account interest on any NPA, including Govt guaranteed accounts.",
+      "plain_english": "Do not recognize income on non-performing loans, including those guaranteed by the government.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "source_clause": "3.1"
+    },
+    {
+      "text": "Reverse interest already charged but uncollected by debiting P&L and stop further application of interest on NPAs.",
+      "plain_english": "Reverse any previously recognized interest on non-performing loans and stop recognizing further interest.",
+      "applicable_to": [
+        "All Commercial Banks"
+      ],
+      "source_clause": "3.4"
+    }
+  ],
+  "penalties": [
+    {
+      "amount": "20% - 35% additional provisioning",
+      "condition": "If a viable Resolution Plan is not implemented within 180 days from the end of the review period",
+      "section": "11"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Non-performing Asset (NPA)",
+      "definition": "A loan or advance where interest/principal instalment remains overdue for more than 90 days.",
+      "plain_english": "A loan that is not generating income for the bank due to overdue payments."
+    },
+    {
+      "term": "Out of Order",
+      "definition": "Status for CC/OD accounts where the balance remains continuously above the limit or there are insufficient credits to cover interest.",
+      "plain_english": "A cash credit or overdraft account that has a balance above the limit or insufficient credits to cover interest."
+    },
+    {
+      "term": "Overdue",
+      "definition": "Any amount due to the bank not paid on the fixed due date.",
+      "plain_english": "An amount that is not paid on the due date."
+    },
+    {
+      "term": "Restructuring",
+      "definition": "An act where a lender, for economic or legal reasons relating to the borrower's financial difficulty, grants concessions.",
+      "plain_english": "The process of modifying the terms of a loan to help a borrower in financial difficulty."
+    },
+    {
+      "term": "Specified Period",
+      "definition": "One year from the commencement of the first payment of interest or principal under a restructuring package.",
+      "plain_english": "A one-year period after the start of payments under a loan restructuring agreement."
+    },
+    {
+      "term": "Technical Write-off",
+      "definition": "Writing off NPAs at the Head Office level without foregoing the right to recovery at the branch level.",
+      "plain_english": "The process of writing off non-performing loans at the head office level while still attempting to recover the amount at the branch level."
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "Master Circular DOR.STR.REC.8/21.04.048/2024-25",
+      "relationship": "Superseded by"
+    },
+    {
+      "circular_number": "DOR.CRE.REC.10/21.04.048/2025-26",
+      "relationship": "Referenced"
+    },
+    {
+      "circular_number": "Reserve Bank of India (Securitisation of Standard Assets) Directions, 2021",
+      "relationship": "Governing liquidity facilities"
+    },
+    {
+      "circular_number": "Reserve Bank of India (Transfer of Loan Exposures) Directions, 2021",
+      "relationship": "Governing asset transfers"
+    },
+    {
+      "circular_number": "Insolvency and Bankruptcy Code (IBC), 2016",
+      "relationship": "Definition of default"
+    },
+    {
+      "circular_number": "Income Tax Act, 1961 (Section 43D)",
+      "relationship": "Taxation of interest on bad/doubtful debts"
+    },
+    {
+      "circular_number": "DOR.MRG.77/00-00-007/2022-23",
+      "relationship": "Unhedged Foreign Currency Exposure"
+    },
+    {
+      "circular_number": "Master Direction on Financial Statements - Presentation and Disclosures (August 30, 2021)",
+      "relationship": "Reporting formats for write-offs and PCR"
+    }
+  ]
+}

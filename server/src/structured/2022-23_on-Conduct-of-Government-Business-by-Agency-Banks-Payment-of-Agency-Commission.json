@@ -1,0 +1,207 @@
+{
+  "circular": {
+    "id": "RBI/2025-26/06; CO.DGBA.GBD.No.S2/31-12-010/2025-2026",
+    "title": "Master Circular on Conduct of Government Business by Agency Banks - Payment of Agency Commission",
+    "date": "2025-04-01",
+    "circular_number": "RBI/2025-26/06",
+    "type": "Master Circular",
+    "topic": "General",
+    "applicable_to": [
+      "Agency Banks"
+    ],
+    "status": "Active",
+    "summary": "This Master Circular consolidates instructions regarding the payment of agency commission to banks for handling government business on behalf of the Central and State Governments. It defines eligible and ineligible transactions, establishes the specific reporting protocols for GST and direct tax collections, and outlines the revised rates for various services. The circular also mandates strict audit requirements and timelines for claiming commission to ensure accuracy and prevent wrong claims."
+  },
+  "clauses": [
+    {
+      "clause_number": "1",
+      "text": "The Reserve Bank of India pays agency commission to banks appointed under Section 45 of the RBI Act, 1934, for government business handled by them.",
+      "summary": "Introduction to agency commission payment",
+      "type": "Introduction"
+    },
+    {
+      "clause_number": "2",
+      "text": "Transactions relating to the following are eligible: (a) Revenue receipts and payments for Central/State Governments. (b) Pension payments for Central/State Governments. (c) Other items specifically advised by RBI. (d) Stamp duty collection, provided no charges are collected from the public and no remuneration is received from the State Government.",
+      "summary": "Eligible transactions for agency commission",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "3",
+      "text": "Activities ineligible for commission: (a) Bank guarantees/security deposits for government contractors. (b) Banking business of autonomous bodies, municipalities, or local bodies. (c) Payments classified as capital in nature to cover losses of autonomous bodies. (d) Prefunded schemes. (e) Gold Monetisation Scheme, 2015. (f) Letters of Credit / Bank Guarantees opened on behalf of Ministries.",
+      "summary": "Ineligible transactions for agency commission",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "4",
+      "text": "Banks must upload luggage files for GST, Customs, and Direct Taxes (TIN 2.0) into QPX/e-Kuber on all days except Global holidays before 1800 hours.",
+      "summary": "Reporting of transactions by agency banks to RBI",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "5",
+      "text": "The rates applicable from July 1, 2019: * Receipts - Physical mode: ₹40 per transaction. * Receipts - e-mode: ₹9 per transaction. * Pension Payments: ₹75 per transaction. * Payments other than Pension: 6.5 paise per ₹100 turnover.",
+      "summary": "Rates for agency commission",
+      "type": "Definition"
+    },
+    {
+      "clause_number": "6",
+      "text": "Claims must be submitted directly to CAS Nagpur (Central Govt) or respective Regional Offices (State Govt).",
+      "summary": "Claiming agency commission",
+      "type": "Obligation"
+    },
+    {
+      "clause_number": "7",
+      "text": "Agency banks are liable to pay penal interest for settling wrong claims. * Penalty Rate: Bank Rate as notified by RBI plus 2%.",
+      "summary": "Penal interest for wrong claims",
+      "type": "Penalty"
+    }
+  ],
+  "obligations": [
+    {
+      "text": "Upload luggage files for GST, Customs, and Direct Taxes in QPX/e-Kuber on all days except Global holidays before 1800 hours.",
+      "plain_english": "Banks must upload transaction records daily",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "Daily",
+      "frequency": "Ongoing",
+      "source_clause": "4"
+    },
+    {
+      "text": "Transfer monthly balances for State Government transactions by the 5th of the following month.",
+      "plain_english": "Banks must transfer monthly balances for state government transactions",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "5th of the following month",
+      "frequency": "Monthly",
+      "source_clause": "4"
+    },
+    {
+      "text": "Obtain prior approval from Ministry/Department for Central Govt transactions reported after a gap of 90 days.",
+      "plain_english": "Banks must obtain prior approval for delayed central government transactions",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "After 90-day delay",
+      "frequency": "One-time",
+      "source_clause": "3"
+    },
+    {
+      "text": "Certify that no claim of agency commission is made on ineligible transactions.",
+      "plain_english": "Banks must certify that no claim is made on ineligible transactions",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "At time of claim",
+      "frequency": "One-time",
+      "source_clause": "3"
+    },
+    {
+      "text": "Submit agency commission claims in prescribed format with GST details within 60 calendar days from the end of the quarter.",
+      "plain_english": "Banks must submit agency commission claims with GST details",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "60 calendar days from the end of the quarter",
+      "frequency": "Quarterly",
+      "source_clause": "6"
+    },
+    {
+      "text": "Ensure commission claims are certified by internal/concurrent auditors or Chartered/Cost Accountants.",
+      "plain_english": "Banks must ensure commission claims are certified by auditors or accountants",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "Quarterly",
+      "frequency": "Quarterly",
+      "source_clause": "6"
+    },
+    {
+      "text": "Settle agency transactions and commission directly with the concerned Regional Office of RBI.",
+      "plain_english": "Banks must settle agency transactions and commission with RBI",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "Ongoing",
+      "frequency": "Ongoing",
+      "source_clause": "7"
+    },
+    {
+      "text": "Report any pension payment arrears as a single credit transaction for commission purposes.",
+      "plain_english": "Banks must report pension payment arrears as a single credit transaction",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "deadline_days": "Ongoing",
+      "frequency": "Ongoing",
+      "source_clause": "5"
+    }
+  ],
+  "prohibitions": [
+    {
+      "text": "Agency banks paying their own tax liabilities (TDS, Corporation Tax, etc.) must indicate these separately in the scroll and exclude them from commission claims.",
+      "plain_english": "Banks cannot claim commission on their own tax liabilities",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "source_clause": "3"
+    },
+    {
+      "text": "Bank guarantees/security deposits for government contractors are not eligible for commission.",
+      "plain_english": "Banks cannot claim commission on bank guarantees for government contractors",
+      "applicable_to": [
+        "Agency Banks"
+      ],
+      "source_clause": "3"
+    }
+  ],
+  "penalties": [
+    {
+      "amount": "Bank Rate as notified by RBI plus 2%",
+      "condition": "For settling wrong claims",
+      "section": "7"
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Agency Banks",
+      "definition": "Banks appointed under Section 45 of the RBI Act, 1934, to carry out general banking business of Central and State Governments.",
+      "plain_english": "Banks authorized to handle government business"
+    },
+    {
+      "term": "Receipts-e-mode",
+      "definition": "Transactions involving remittance of funds via Internet banking or those not involving physical receipt of cash/instruments.",
+      "plain_english": "Electronic transactions"
+    },
+    {
+      "term": "Luggage Files",
+      "definition": "Data files containing government transaction records uploaded to RBI's e-Kuber system.",
+      "plain_english": "Electronic files containing government transaction data"
+    },
+    {
+      "term": "TIN 2.0",
+      "definition": "The upgraded Tax Information Network channel for Direct Tax collections.",
+      "plain_english": "Upgraded tax information network"
+    },
+    {
+      "term": "ICEGATE",
+      "definition": "The Indian Customs Electronic Data Interchange Gateway for indirect tax collection.",
+      "plain_english": "Electronic customs data interchange gateway"
+    }
+  ],
+  "references": [
+    {
+      "circular_number": "RBI/2024-25/07",
+      "relationship": "supersedes"
+    },
+    {
+      "circular_number": "A.P. (DIR Series) Circular No. 18 dated October 04, 2024",
+      "relationship": "references"
+    },
+    {
+      "circular_number": "Notification No. FEMA.3(R)/2018-RB",
+      "relationship": "references"
+    }
+  ]
+}
