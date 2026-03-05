@@ -15,7 +15,6 @@ import {
 import {
   ThumbsUp,
   ThumbsDown,
-  Sparkles,
   Search,
   History,
   Plus,
@@ -32,6 +31,7 @@ import { useAuth } from "@/contexts/auth-context"
 import { SuggestionDropdown } from "@/components/ui/suggestion-dropdown"
 import { fuzzySearch } from "@/services/suggestions/fuzzy"
 import { Playfair_Display } from "next/font/google"
+import Image from "next/image"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { FeedbackDialog } from "@/components/ui/feedback-dialog"
 import { toast } from "sonner"
@@ -939,9 +939,7 @@ export default function ChatPage() {
           <div className="flex h-[60px] w-full items-center justify-between gap-3 sm:gap-6 md:grid md:grid-cols-[auto_minmax(0,1fr)_auto]">
             {/* Left Section - Logo */}
             <div className="flex items-center gap-3 sm:gap-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-crail shadow-sm">
-                <Search className="h-4 w-4 text-white" />
-              </div>
+              <Image src="/logo14.png" alt="RegIntel logo" width={40} height={40} className="rounded-xl shadow-sm" />
               <div className="flex flex-col justify-center">
                 <h1 className={`${playfair.className} relative flex flex-wrap items-baseline justify-center gap-2 text-sm font-semibold leading-snug tracking-tight text-foreground sm:flex-nowrap sm:text-[1rem]`}>
                   RegIntel AI

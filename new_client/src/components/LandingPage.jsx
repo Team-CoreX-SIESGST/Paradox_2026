@@ -1,6 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
-  Flame,
   Zap,
   Brain,
   MessageSquare,
@@ -35,11 +35,23 @@ const features = [
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-pampas">
-      <header className="bg-pampas border-b border-border-subtle">
+    <div className="relative min-h-screen bg-pampas">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "url('/backgroundImg.png')",
+          backgroundSize: "contain",
+          backgroundPosition: "center top",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-pampas/80" />
+      <div className="relative z-10">
+      <header className="bg-pampas/90 border-b border-border-subtle">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Flame className="h-5 w-5 text-crail" />
+            <Image src="/logo14.png" alt="RegIntel logo" width={28} height={28} className="rounded-sm" />
             <span className="text-lg font-semibold text-foreground tracking-tight">RegIntel</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
@@ -144,7 +156,7 @@ export default function LandingPage() {
       <footer className="bg-pampas border-t border-border-subtle py-8 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <Flame className="h-4 w-4 text-crail" />
+            <Image src="/logo14.png" alt="RegIntel logo" width={22} height={22} className="rounded-sm" />
             <span className="text-sm font-semibold text-foreground">RegIntel</span>
           </div>
           <div className="flex items-center gap-6">
@@ -155,6 +167,7 @@ export default function LandingPage() {
           <p className="text-xs text-cloudy">© 2026 RegIntel AI. All rights reserved.</p>
         </div>
       </footer>
+      </div>
     </div>
   );
 }
