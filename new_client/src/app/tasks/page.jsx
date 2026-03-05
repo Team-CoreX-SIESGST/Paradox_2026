@@ -5,6 +5,7 @@ import { Loader2, RefreshCw, Sparkles } from 'lucide-react';
 import { AppSidebar } from '@/components/SIdebar';
 import { useAuth } from '@/contexts/auth-context';
 import { SERVER_URL } from '@/utils/commonHelper';
+import ProtectedRoute from '@/components/auth/protected-route';
 
 const COLUMNS = [
   { key: 'pending', label: 'Pending' },
@@ -176,10 +177,11 @@ export default function TasksPage() {
   }, [tasks]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden flex">
-      <AppSidebar />
+    <ProtectedRoute>
+      <div className="min-h-screen bg-background text-foreground overflow-x-hidden flex">
+        <AppSidebar />
 
-      <div className="flex-1 p-8">
+        <div className="flex-1 p-8">
         <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
           <div>
             <h1 className="text-2xl font-semibold tracking-tight text-foreground">Tasks</h1>
@@ -280,7 +282,8 @@ export default function TasksPage() {
             ))}
           </div>
         )}
+        </div>
       </div>
-    </div>
+    </ProtectedRoute>
   );
 }

@@ -8,14 +8,13 @@ import {
   FileText,
   MessageSquare,
   CheckSquare,
-  Bell,
-  Settings,
   ChevronLeft,
 } from "lucide-react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
+import { useAuth } from "@/contexts/auth-context";
 
 const navItems = [
-  { title: "Dashboard", url: "/chat", icon: LayoutDashboard },
+  { title: "Dashboard", url: "/dashboard", icon: LayoutDashboard },
   { title: "Circulars", url: "/circulars", icon: FileText },
   { title: "Compliance Chat", url: "/chat", icon: MessageSquare },
   { title: "Tasks", url: "/tasks", icon: CheckSquare },
@@ -32,6 +31,13 @@ const recentCirculars = [
 export function AppSidebar() {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(false);
+  const { user } = useAuth();
+  const userEmail = user?.email || "Not signed in";
+  const userRole = user?.role || "Compliance User";
+  const userInitial = useMemo(
+    () => (userEmail && userEmail !== "Not signed in" ? userEmail.slice(0, 1).toUpperCase() : "U"),
+    [userEmail]
+  );
 
   return (
     <aside
@@ -43,9 +49,11 @@ export function AppSidebar() {
       <div className="flex items-center gap-2 px-5 py-5 border-b border-border-subtle">
         <Image src="/logo14.png" alt="RegIntel logo" width={28} height={28} className="rounded-sm flex-shrink-0" />
         {!collapsed && (
-          <span className="text-lg font-semibold text-foreground tracking-tight">
-            RegIntel
-          </span>
+          <Link href="/">
+            <span className="text-lg font-semibold text-foreground tracking-tight">
+              RegIntel
+            </span>
+          </Link>
         )}
         <button
           onClick={() => setCollapsed(!collapsed)}
@@ -103,12 +111,12 @@ export function AppSidebar() {
       <div className="px-4 py-4 border-t border-border-subtle">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-full bg-pampas border border-border-subtle flex items-center justify-center text-xs font-medium text-crail flex-shrink-0">
-            AK
+            {userInitial}
           </div>
           {!collapsed && (
             <div className="min-w-0">
-              <p className="text-sm font-medium text-foreground truncate">Amit Kumar</p>
-              <p className="text-xs text-cloudy truncate">Compliance Head</p>
+              <p className="text-sm font-medium text-foreground truncate">{userEmail}</p>
+              <p className="text-xs text-cloudy truncate">{userRole}</p>
             </div>
           )}
         </div>

@@ -126,7 +126,7 @@ export default function LandingPage() {
       />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-pampas/80" />
       <div className="relative z-10">
-      <header className="bg-pampas/90 border-b border-border-subtle">
+      <header className="bg-pampas/90 border-b border-border-subtle ">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image src="/logo14.png" alt="RegIntel logo" width={28} height={28} className="rounded-sm" />
